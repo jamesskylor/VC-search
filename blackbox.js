@@ -64,12 +64,12 @@ for (ind = 0; ind < jsonFile.length; ind += 1) {
     tempPts = -1;
     
     // Only care at all if the stage matches
-    if (jsonFile[ind].stage === srchStage) {
+    if (jsonFile[ind].stage === srchStage) { // Fix w/ set.has() srchStage
         
         // Search if same location and assign a point if so
         // Only check while tempPts == 0 since if it == 1, then it's already found it's answer
         var locSrch;
-        for (locSrch = 0; locSrch < jsonFile[ind].location.length && tempPts === 0; locSrch += 1) {
+        for (locSrch = 0; locSrch < jsonFile[ind].location.length && tempPts === 0; locSrch += 1) { // See if can improve w/ set.has again
             if (srchLoc === jsonFile[ind].location[locSrch]) {
                 tempPts += 1;
             }
