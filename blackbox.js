@@ -64,36 +64,21 @@ for (ind = 0; ind < jsonFile.length; ind += 1) {
     tempPts = -1;
     
     // Only care at all if the stage matches
-    if (jsonFile[ind].stage === srchStage) { // Fix w/ set.has() srchStage
+    if (new Set(jsonFile[ind].stage).has(srchStage)) { // Fix w/ set.has() srchStage
         
         // Search if same location and assign a point if so
         // Only check while tempPts == 0 since if it == 1, then it's already found it's answer
         var locSrch;
-        for (locSrch = 0; locSrch < jsonFile[ind].location.length && tempPts === 0; locSrch += 1) { // See if can improve w/ set.has again
-            if (srchLoc === jsonFile[ind].location[locSrch]) {
-                tempPts += 1;
-            }
+        if(new Set(jsonFile[ind].location).has(srchLoc)) {
+            tempPts += 1;
         }
         
         // Now search for matches in sectors
-        // Either use 2 for loops OR
         // Create 2 sets, set estSize to their sizes added together, union them and tempPts+=2*(estSize-union.size);
         var estSize = srchSector.length + jsonFile[ind].sectors.length;
         var set = new Set(srchSector);
         jsonFile[ind].sectors.forEach(set.add, set);
         tempPts += 2 * (estSize - set.size);
-        
-        // OR
-        
-        var loop1;
-        var loop2;
-        for (loop1 = 0; loop1 < srchSector.length; srchSector += 1) {
-            for (loop2 = 0; loop2 < jsonFile[ind].sectors.length; loop2 += 1) {
-                if (srchSector[loop1] === jsonFile[ind].sectors[loop2]) {
-                    tempPts += 2;
-                }
-            }
-        }
         
         // Put the investor into an array storing the information on how good a match they are
         if (tempPts > 0) {
