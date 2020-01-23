@@ -1,0 +1,20 @@
+Font: Lustria
+Questions: #000000
+Answers: #424252
+Buttons: #000000
+Background: #FFFFFF
+
+Black-y:
+- #545454
+- #666666
+- #444447
+
+Bluey
+- #424252
+- #51516C
+- #696981
+- #5F5F74
+
+Purpl-y
+- #442244
+- #7F6981
