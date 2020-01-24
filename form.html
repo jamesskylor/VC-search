@@ -4,73 +4,83 @@
     
     
     <head>
-  
-     <style>
-         div.form {
-         display: block;
-         text-align:center;
-     }
-form {
-width:100%;
-height:450px;
-margin:auto;
-position:relative;
-display: inline-block;
-     margin-left: auto;
-     margin-right: auto;
-     text-align: center;
-}
- input {
-width:20%;
-height: 25px;
-border-top-style: hidden;
-border-right-style: hidden;
-border-left-style: hidden;
-border-bottom-style: groove;
- }
- .no-outline:focus {
-     outline: none;
- }
- select {
-width:20%;
-height: 25px;
-border-top-style: hidden;
-border-right-style: hidden;
-border-left-style: hidden;
-border-bottom-style: groove;
- }
- select.multi-select {
-     height: 100px;
- }
-</style>    
+        <link href="https://fonts.googleapis.com/css?family=Lustria&display=swap" rel="stylesheet">
+        <style>
+            div.form {
+                display: block;
+                text-align:center;
+            }
+            h1 {
+                font-family: 'Lustria', serif;
+            }
+            body{
+                background-color: #FFFFFF
+            }
+            form {
+                font-family: 'Lustria', serif;
+                width:100%;
+                height:450px;
+                margin:auto;
+                position:relative;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            input {
+                font-family: 'Lustria', serif;
+                width:20%;
+                height: 25px;
+            }
+            .borderless {
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: groove;
+            }
+            .no-outline:focus {
+                outline: none;
+            }
+            select {
+                font-family: 'Lustria', serif;
+                width:20%;
+                height: 25px;
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: groove;
+            }
+            select.multi-select {
+                height: 100px;
+            }
+        </style>    
     </head>
-    
     
     <body>
         <div class="form">
             <h1>
                 Match
             </h1>
-                 <form>
+            <form>
                 <p>
                     Company Name:
                 </p>
-                <input type="text" class="no-outline" placeholder="Company Name">
+                <input type="text" class="borderless no-outline" placeholder="Company Name">
                 <p>
                     Founder Name(s):
                 </p>
-                <input type="text" class="no-outline" placeholder="Founder Name">
+                    <input type="text" class="borderless no-outline" placeholder="Founder Name">
                 <p>
                     Company Stage:
                 </p>
-                <select name="stage" class="no-outline">
+                <select name="stage" class="borderless no-outline">
                     <option value="seed">Seed</option>
                     <option value="a">A and Above</option>
                 </select>
                 <p>
                     Company Location:
                 </p>
-                <select name="location" class="no-outline">
+                <select name="location" class="borderless no-outline">
                     <option value="boston">Boston</option>
                     <option value="canada">Canada</option>
                     <option value="isreal">Isreal</option>
@@ -82,7 +92,7 @@ border-bottom-style: groove;
                 <p>
                     Company Sectors (Hold down ctrl or cmd to select multiple):
                 </p>
-                <select name="sector" size = "7" multiple class="no-outline multi-select">
+                <select name="sector" size = "7" multiple class="borderless no-outline multi-select">
                     <option value="agtech">AgTech</option>
                     <option value="ai">AI</option>
                     <option value="vr">AR/VR</option>
@@ -111,6 +121,5 @@ border-bottom-style: groove;
             </form>
         </div>
     </body>
-    
     
 </html>
