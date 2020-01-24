@@ -61,7 +61,7 @@
                 border-bottom-style: groove;
             }
             select.multi-select {
-                height: 200px;
+                height: 150px;
             }
         </style>
         <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
@@ -75,24 +75,32 @@
             </h1>
             <form>
                 <p>
-                    Company Name:
+                    <strong>Company Name:</strong>
                 </p>
                 <input type="text" class="borderless no-outline" placeholder="Type . . .">
+                <br>
+                <br>
                 <p>
-                    Founder Name(s):
+                    <strong>Founder Name(s):</strong>
                 </p>
-                    <input type="text" class="borderless no-outline" placeholder="Type . . .">
+                <input type="text" class="borderless no-outline" placeholder="Type . . .">
+                <br>
+                <br>
                 <p>
-                    Company Stage:
+                    <strong>Company Stage:</strong>
                 </p>
+                <br>
                 <select name="stage" class="borderless no-outline">
                     <option value="" disabled selected>Select your option</option>
                     <option value="seed">Seed</option>
                     <option value="a">A+</option>
                 </select>
+                <br>
+                <br>
                 <p>
-                    Company Location:
+                    <strong>Company Location:</strong>
                 </p>
+                <br>
                 <select name="location" class="borderless no-outline">
                     <option value="" disabled selected>Select your option</option>
                     <option value="boston">Boston</option>
@@ -103,9 +111,12 @@
                     <option value="sanFrancisco">San Francisco Bay Area</option>
                     <option value="seattlePortland">Seattle</option>
                 </select>
+                <br>
+                <br>
                 <p>
-                    Company Sectors (Hold down ctrl or cmd to select multiple):
+                    <strong>Company Sectors (Hold down ctrl or cmd to select multiple):</strong>
                 </p>
+                <br>
                 <select name="sector" size = "7" multiple class="borderless no-outline multi-select">
                     <option value="agtech">AgTech</option>
                     <option value="ai">AI</option>
