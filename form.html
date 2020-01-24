@@ -94,10 +94,7 @@
                 </select>
                 <p>
                     Company Sectors (Hold down ctrl or cmd to select multiple):
-                    <script>$(document).ready(function() {
-                        $("select.js-multiple").select2();
-                    });
-                    </script>
+                   
                 </p>
                 <select name="sector" size = "7" multiple= "multiple" class="borderless no-outline multi-select js-multiple">
                     <option value="agtech">AgTech</option>
@@ -127,7 +124,10 @@
                 <input type="submit" value="Continue to results...">
             </form>
         </div>
-        
+        <script>$(document).ready(function() {
+            $("select.js-multiple").select2();
+        });
+        </script>
     </body>
     
 </html>
