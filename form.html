@@ -57,7 +57,7 @@
             }
         </style>
        <script>$(document).ready(function() {
-        $('.js-multiple').select2();
+        $('form.js-multiple').select2();
     });</script>
     </head>
     
@@ -98,7 +98,7 @@
                     Company Sectors (Hold down ctrl or cmd to select multiple):
                    
                 </p>
-                <select name="sector" size = "7" multiple= "multiple" class="borderless no-outline multi-select js-multiple">
+                <select name="sector[]" size = "7" multiple= "multiple" class="borderless no-outline multi-select js-multiple">
                     <option value="agtech">AgTech</option>
                     <option value="ai">AI</option>
                     <option value="vr">AR/VR</option>
