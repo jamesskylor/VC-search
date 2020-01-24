@@ -1,0 +1,28 @@
+To Do:
+- Finish the process that gets a Sheet into the JSON we need
+- Fix the multiselect in form.html
+- Code the method of transfer info from form.html -> blackbox.js
+    - Give the site a URL (Put it online)
+- Test blackbox.js
+- Code the method of transfer info from blackbox.js -> results.html
+
+
+Organizing the flow of the tool:
+
+Step 0:
+    Turn sheets into .csv
+    Convert CSV to JSON
+    Convert JSON into more readable JSON w/ arrays
+
+Step 1:
+    Run form.html and let user input data
+    Have code that transfers the informationt to blackbox.js
+    
+Step 2:
+    Run loadScreen.html while blackbox.js searches/matches
+    Run blackbox.js
+        Read in vc-match.json
+    
+Step 3:
+    Send the results from blackbox.js to results.html using another js file
+    
