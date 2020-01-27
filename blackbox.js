@@ -32,7 +32,7 @@ function formToResults(srchStage, srchLoc, srchSector) {
         tempPts = -1;
 
         // Only care at all if the stage matches
-        if (new Set(jsonFile[ind].stage).has(srchStage)) { // Fix w/ set.has() srchStage
+        if (new Set(jsonFile[ind].stage).has(srchStage)) {
 
             // Search if same location and assign a point if so
             // Only check while tempPts == 0 since if it == 1, then it's already found it's answer
