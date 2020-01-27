@@ -59,11 +59,11 @@ function formToResults(srchStage, srchLoc, srchSector) {
     // Put underneath, the code for displaying the results
     
     var pointLoop, vcLoop;
-    for (pointLoop = selections.length-1; pointLoop > 0; pointLoop--) {
+    for (pointLoop = selections.length - 1; pointLoop > 0; pointLoop --) {
         // Create a large "table" for all vc's in this "league"
         
         
-        for (vcLoop = 0; vcLoop < selections[pointloop].length; vcLoop++) {
+        for (vcLoop = 0; vcLoop < selections[pointLoop].length; vcLoop ++) {
             // Put in the code that creates the little index for this particular person
             
             
