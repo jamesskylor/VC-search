@@ -61,7 +61,9 @@ function formToResults(srchStage, srchLoc, srchSector) {
     var pointLoop, vcLoop, resultCount = 0;
     for (pointLoop = selections.length - 1; pointLoop > 0; pointLoop --) {
         // Check if there is anyone in this league
-        if(selections[pointLoop].length <= 0) continue;
+        if (selections[pointLoop].length <= 0) {
+            continue;
+        }
         // Display this league's points: 'X/Y Point Matches' where X is num of points and Y is total amnt
         
         
@@ -102,6 +104,7 @@ function formToResults(srchStage, srchLoc, srchSector) {
     
     return false;
 }
+
 
 
 /*
