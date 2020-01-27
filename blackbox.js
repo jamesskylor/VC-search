@@ -54,7 +54,7 @@ function formToResults(srchStage, srchLoc, srchSector) {
         }
     }
     
-    location.assign(/* Put in the URL of results.html */);
+    location.replace(/* Put in the URL of results.html */);
     
     // Put underneath, the code for displaying the results
     
