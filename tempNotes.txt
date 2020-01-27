@@ -1,12 +1,8 @@
 To Do:
 - Finish the process that gets a Sheet into the JSON we need
-- Fix the multiselect in form.html
-- Code the method of transfer info from form.html -> blackbox.js
-    - Give the site a URL (Put it online)
 - Test blackbox.js
 - Code the method of transfer info from blackbox.js -> results.html
-    - Modify blackbox.js to switch the page from loadingScreen.html to results.html when finished searching (At least load for half a second)
-        - Make it also change elements in results.html to display results
+    - Make it also change elements in results.html to display results
 
 
 Organizing the flow of the tool:
