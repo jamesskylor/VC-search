@@ -58,14 +58,28 @@ function formToResults(srchStage, srchLoc, srchSector) {
     
     // Put underneath, the code for displaying the results
     
-    var pointLoop, vcLoop;
+    var pointLoop, vcLoop, resultCount = 0;
     for (pointLoop = selections.length - 1; pointLoop > 0; pointLoop --) {
+        // Check if there is anyone in this league
+        if(selections[pointLoop].length <= 0) continue;
+        // Display this league's points: 'X/Y Point Matches' where X is num of points and Y is total amnt
+        
+        
+        
         // Create a large "table" for all vc's in this "league"
+        
         
         
         for (vcLoop = 0; vcLoop < selections[pointLoop].length; vcLoop ++) {
             // Put in the code that creates the little index for this particular person
+            // Start by incrementing counter of results
+            resultCount++;
+            // Append a row into table with all info
+            //  Include a href displaying VC name and linking to their website
             
+            
+            
+            // Loop through sectors to append in a single cell
             
             
             
@@ -73,9 +87,16 @@ function formToResults(srchStage, srchLoc, srchSector) {
         // Close this "table"
         // Create space for next one
         
+        
+        
     }
     
-    
+    if (resultCount == 0) {
+        // Display a sorry message about not finding any matches
+        
+        
+        
+    }
     
     // To here
     
