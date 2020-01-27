@@ -4,15 +4,7 @@
     
     
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lustria&display=swap" rel="stylesheet">
-        <script type="text/javascript">$(document).ready(function() {
-            $(".js-multiple").select2({
-                placeholder: "Select sectors"
-            })
-        });</script>
         <style>
             div.form {
                 padding-top: 1%;
@@ -69,12 +61,11 @@
                 border-bottom-style: groove;
             }
             select.multi-select {
-                height: 200px;
                 height: 150px;
-
             }
         </style>
-    
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>   
     </head>
     
     <body>
@@ -87,20 +78,14 @@
                     <strong>Company Name:</strong>
                 </p>
                 <input type="text" class="borderless no-outline" placeholder="Type . . .">
-
-
                 <br>
                 <br>
-
                 <p>
                     <strong>Founder Name(s):</strong>
                 </p>
-
-                    <input type="text" class="borderless no-outline" placeholder="Type . . .">
                 <input type="text" class="borderless no-outline" placeholder="Type . . .">
                 <br>
                 <br>
-
                 <p>
                     <strong>Company Stage:</strong>
                 </p>
@@ -130,17 +115,10 @@
                 <br>
                 <br>
                 <p>
-
-                    Company Sectors (Hold down ctrl or cmd to select multiple):
-                   
-                </p>
-                <select name="sector" id="sector" multiple= "multiple" class="borderless no-outline multi-select js-multiple">
-
                     <strong>Company Sectors (Hold down ctrl or cmd to select multiple):</strong>
                 </p>
                 <br>
                 <select name="sector" size = "7" multiple class="borderless no-outline multi-select">
-
                     <option value="agtech">AgTech</option>
                     <option value="ai">AI</option>
                     <option value="vr">AR/VR</option>
@@ -164,15 +142,10 @@
                     <option value="quantum">Quantum</option>
                     <option value="robotics">Robotics</option>
                     <option value="space">Space</option>
-
-                   
-                </select><br><br>
-        </select><br><br><br>
-
+                </select><br><br><br>
                 <input type="submit" value="Continue to results..." class="button">
             </form>
         </div>
-        
     </body>
     
 </html>
