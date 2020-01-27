@@ -5,8 +5,11 @@ To Do:
     - Give the site a URL (Put it online)
 - Test blackbox.js
 - Code the method of transfer info from blackbox.js -> results.html
+
+
     - Modify blackbox.js to switch the page from loadingScreen.html to results.html when finished searching (At least load for half a second)
         - Make it also change elements in results.html to display results
+
 
 
 Organizing the flow of the tool:
