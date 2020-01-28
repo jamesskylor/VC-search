@@ -86,6 +86,20 @@ function formToResults(srchStage, srchLoc, srchSector) {
     return false;
 }
 
+/*
+Descending loop of selections
+    Check if <= 0 vc then continue
+    Create h1 for that table
+    Create table
+    Loop through VCs
+        check if current loopVal % 2 == 0
+            Create row and append to table
+        Create cell and append in current row
+        Append h2 in current cell
+        Create p w/ information
+        Append p in current cell
+    Create space to next table
+*/
 
 /*
 
