@@ -5,9 +5,8 @@ To Do:
 - Code the way to recieve the answers to the form
 */
 
-document.getElementsById("theForm")[0].addEventListener('submit', formToResults('stage', 'location', 'sectors'));
-
-function formToResults(srchStage, srchLoc, srchSector) {
+function formToResults() {
+    var srchStage, srchLoc, srchSector;
     "use strict";
     location.assign("https://www.google.ca");
     
@@ -105,6 +104,7 @@ function formToResults(srchStage, srchLoc, srchSector) {
     return false;
 }
 
+document.getElementbyId("submitButton").addEventListener('click', formToResults());
 
 
 /*

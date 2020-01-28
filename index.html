@@ -72,7 +72,6 @@
                 height: 150px;
             }
         </style>
-        <script src="blackbox.js"></script>
     </head>
     
     <body>
@@ -80,7 +79,7 @@
             <h1>
                 [Blank]
             </h1>
-            <form onsubmit="return formToResults(stage, location, sector);" id="theForm">
+            <form id="theForm">
                 <p>
                     <strong>Company Name:</strong>
                 </p>
@@ -150,9 +149,9 @@
                     <option value="robotics">Robotics</option>
                     <option value="space">Space</option>
                 </select><br><br><br>
-                <input type="submit" value="Continue to results..." class="button">
+                <input type="submit" value="Continue to results..." class="button" id="submitButton">
             </form>
         </div>
+        <script src="blackbox.js"></script>
     </body>
-    
 </html>
