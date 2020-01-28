@@ -151,7 +151,9 @@
                 </select><br><br><br>
                 <input type="submit" value="Continue to results..." class="button" id="submitButton">
             </form>
-            <script src="blackbox.js"></script>
+            <script src="blackbox.js">
+                document.getElementById("submitButton").addEventListener('click', formToResults);
+            </script>
         </div>
     </body>
 </html>
