@@ -61,8 +61,9 @@ function formToResults(srchStage, srchLoc, srchSector) {
     var pointLoop, vcLoop;
     for (pointLoop = selections.length - 1; pointLoop > 0; pointLoop --) {
         // Create a large "table" for all vc's in this "league"
-        table.insertRow();
-        
+        var tabel = document.createElement("TABLE");
+        tabel.setAttribute("id", "table"+pointLoop);
+        document.body.appendChild(tabel)
         
         
         
