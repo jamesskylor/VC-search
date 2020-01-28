@@ -104,7 +104,7 @@ function formToResults() {
     return false;
 }
 
-document.getElementById("theForm").addEventListener('submit', formToResults().bind(this));
+document.getElementById("submitButton").addEventListener('click', formToResults().bind(this));
 
 
 /*
