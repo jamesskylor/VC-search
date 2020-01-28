@@ -5,7 +5,11 @@ To Do:
 - Code the way to recieve the answers to the form
 */
 
-document.getElementById("submitButton").addEventListener('click', formToResults);
+document.getElementById("theForm").addEventListener('submit', (e)=>{
+    //e.stopPropagation();
+    e.preventDefault();
+    formToResults();
+});
 
 function formToResults() {
     var srchStage, srchLoc, srchSector;
@@ -106,7 +110,7 @@ function formToResults() {
     return false;
 }
 
-
+    
 
 /*
 
