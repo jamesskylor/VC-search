@@ -91,6 +91,7 @@ function formToResults(srchStage, srchLoc, srchSector) {
             curCell.appendChild(head2);
             currentRow.appendChild(curCell);
         }
+        // Append the row
         document.getElementById().appendChild(currentRow);
         document.body.appendChild(document.createElement("BR"));
     }
