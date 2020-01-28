@@ -5,7 +5,7 @@ To Do:
 - Code the way to recieve the answers to the form
 */
 
-
+document.getElementsById("theForm")[0].addEventListener('submit', formToResults('stage', 'location', 'sectors'));
 
 function formToResults(srchStage, srchLoc, srchSector) {
     "use strict";
