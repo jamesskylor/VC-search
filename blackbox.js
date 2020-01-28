@@ -65,7 +65,7 @@ function formToResults(srchStage, srchLoc, srchSector) {
             continue;
         }
         // Display this league's points: 'X/Y Point Matches' where X is num of points and Y is total amnt
-        
+        var ptTitle = document.createElement("H1");
         
         
         // Create a large "table" for all vc's in this "league"
