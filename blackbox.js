@@ -59,7 +59,7 @@ function formToResults() {
         }
     }
     
-    location.replace(/* Put in the URL of results.html */);
+    location.replace("https://www.duckduckgo.com");
     
     // Put underneath, the code for displaying the results
     
