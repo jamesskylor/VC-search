@@ -5,6 +5,8 @@ To Do:
 - Code the way to recieve the answers to the form
 */
 
+document.getElementById("submitButton").addEventListener('click', formToResults);
+
 function formToResults() {
     var srchStage, srchLoc, srchSector;
     "use strict";
@@ -104,7 +106,6 @@ function formToResults() {
     return false;
 }
 
-document.getElementById("submitButton").addEventListener('click', formToResults);
 
 
 /*
