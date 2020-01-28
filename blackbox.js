@@ -9,7 +9,7 @@ To Do:
 
 function formToResults(srchStage, srchLoc, srchSector) {
     "use strict";
-    location.assign(/* Put in the URL of loadingScreen.html */);
+    location.assign("https://www.google.ca");
     
     // Get the JSON file first and other pre stuff
     // The other info is part of the arguments
