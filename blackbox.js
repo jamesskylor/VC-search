@@ -104,7 +104,9 @@ function formToResults() {
     }
   
     if(resultsCount == 0) {
-        // Display a sorry message about not finding any messages
+        var srryMes = document.createElement("P");
+        srryMes.innerHTML = "Sorry, no VCs were found to match with your company";
+        document.body.appendChild(srryMes);
     }
     
     
