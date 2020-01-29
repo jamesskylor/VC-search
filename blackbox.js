@@ -17,7 +17,7 @@ function formToResults() {
     srchLoc = document.getElementById("getLocation").value;
     srchSector = document.getElementById("getSector").value;
     "use strict";
-    location.assign("https://www.google.ca");
+    location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
     
     // Get the JSON file first and other pre stuff
     // The other info is part of the arguments
