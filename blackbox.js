@@ -62,7 +62,7 @@ function formToResults() {
         }
     }
     
-    location.replace("https://www.duckduckgo.com");
+    location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
     
     // Put underneath, the code for displaying the results
     
