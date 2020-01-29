@@ -63,54 +63,70 @@ function formToResults() {
     
     // Put underneath, the code for displaying the results
     
-    var pointLoop, vcLoop, resultCount = 0;
-    for (pointLoop = selections.length - 1; pointLoop > 0; pointLoop --) {
-        // Check if there is anyone in this league
-        if (selections[pointLoop].length <= 0) {
-            continue;
-        }
-        // Display this league's points: 'X/Y Point Matches' where X is num of points and Y is total amnt
-        var ptTitle = document.createElement("H1");
-        
-        
+    
+    var pointLoop, vcLoop, resultsCount = 0;
+    for (pointLoop = 1; pointLoop < selections.length; pointLoop ++) {
         // Create a large "table" for all vc's in this "league"
-        
-        
-        
+        var tabel = document.createElement("TABLE");
+        tabel.setAttribute("id", "table"+pointLoop);
+        document.body.appendChild(tabel);
+        // Create a title for the table
+        var head1 = document.createElement("H1");
+        head1.setAttribute("id", "header1"+pointLoop);
+        head1.innerHtML = pointLoop+"/"+(selections.length-1)+" Point Matches";
+        document.body.appendChild(head1);
+        var currentRow;
+        // Loop through all the VC's in this league
+        resultsCount += selections[pointLoop].length;
         for (vcLoop = 0; vcLoop < selections[pointLoop].length; vcLoop ++) {
-            // Put in the code that creates the little index for this particular person
-            // Start by incrementing counter of results
-            resultCount++;
-            // Append a row into table with all info
-            //  Include a href displaying VC name and linking to their website
-            
-            
-            
-            // Loop through sectors to append in a single cell
-            
-            
-            
+            // Check if need to create new row and submit last one
+            if (vcLoop % 2 == 0) {
+                if (vcLoop != 0) {
+                    document.getElementById("table"+pointLoop).appendChild(currentRow);
+                }
+                currentRow = document.createElement("TR");
+            }
+            // Create current cell and it's header & paragraph of info
+            var curCell = document.createElement("TD");
+            var head2 = document.createElement("H2");
+            var para = document.createElement("P");
+            // Set values for headers and paragraph
+            head2.innerHTML = selections[pointLoop].name;
+            para.innerHTML = "Company Name: "+selections[pointLoop].company+"<br><br>Company Location: "+selections[pointLoop].location+"<br><br>Stage: "+selections[pointLoop].stage+"<br><br>Sectors: "+selections[pointLoop].sectors+"<br><br>";
+            // Append all to their respective "parents"
+            curCell.appendChild(para);
+            curCell.appendChild(head2);
+            currentRow.appendChild(curCell);
         }
-        // Close this "table"
-        // Create space for next one
-        
-        
-        
+        // Append the row
+        document.getElementById().appendChild(currentRow);
+        document.body.appendChild(document.createElement("BR"));
+    }
+  
+    if(resultsCount == 0) {
+        // Display a sorry message about not finding any messages
     }
     
-    if (resultCount == 0) {
-        // Display a sorry message about not finding any matches
-        
-        
-        
-    }
     
     // To here
     
     return false;
 }
 
-    
+/*
+Ascending loop of selections
+    Check if <= 0 vc then continue
+    Create h1 for that table
+    Create table
+    Loop through VCs
+        check if current loopVal % 2 == 0
+            Create row and append to table
+        Create cell and append in current row
+        Append h2 in current cell
+        Create p w/ information
+        Append p in current cell
+    Create space to next table
+*/
 
 /*
 
