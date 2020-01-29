@@ -5,11 +5,16 @@ To Do:
 - Code the way to recieve the answers to the form
 */
 
+document.getElementById("theForm").addEventListener('submit', (e)=>{
+    //e.stopPropagation();
+    e.preventDefault();
+    formToResults();
+});
 
-
-function formToResults(srchStage, srchLoc, srchSector) {
+function formToResults() {
+    var srchStage, srchLoc, srchSector;
     "use strict";
-    location.assign(/* Put in the URL of loadingScreen.html */);
+    location.assign("https://www.google.ca");
     
     // Get the JSON file first and other pre stuff
     // The other info is part of the arguments
@@ -54,11 +59,12 @@ function formToResults(srchStage, srchLoc, srchSector) {
         }
     }
     
-    location.replace(/* Put in the URL of results.html */);
+    location.replace("https://www.duckduckgo.com");
     
     // Put underneath, the code for displaying the results
     
-    var pointLoop, vcLoop;
+    
+    var pointLoop, vcLoop, resultsCount = 0;
     for (pointLoop = 1; pointLoop < selections.length; pointLoop ++) {
         // Create a large "table" for all vc's in this "league"
         var tabel = document.createElement("TABLE");
@@ -71,6 +77,7 @@ function formToResults(srchStage, srchLoc, srchSector) {
         document.body.appendChild(head1);
         var currentRow;
         // Loop through all the VC's in this league
+        resultsCount += selections[pointLoop].length;
         for (vcLoop = 0; vcLoop < selections[pointLoop].length; vcLoop ++) {
             // Check if need to create new row and submit last one
             if (vcLoop % 2 == 0) {
@@ -95,6 +102,11 @@ function formToResults(srchStage, srchLoc, srchSector) {
         document.getElementById().appendChild(currentRow);
         document.body.appendChild(document.createElement("BR"));
     }
+  
+    if(resultsCount == 0) {
+        // Display a sorry message about not finding any messages
+    }
+    
     
     // To here
     
