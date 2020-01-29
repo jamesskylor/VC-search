@@ -5,18 +5,26 @@ To Do:
 - Code the way to recieve the answers to the form
 */
 
+// Create an event listener for the submission of the form
 document.getElementById("theForm").addEventListener('submit', (e)=>{
-    //e.stopPropagation();
+    //e.stopPropagation(); // This is pointless code, we didn't end up needing it
+    // Prevent the form from submitting and interrupting the JS
     e.preventDefault();
+    // Call on the function to run and do all the operations
     formToResults();
 });
 
+// This function moves the browser from the form to the loading screen, does the matching and then moves you to a completed results page
+// It requires that the page it is called on is a form with the required variables shown below
 function formToResults() {
+    // Initialize the variables we need for calculations before switching the page
     var srchStage, srchLoc, srchSector;
+    // Get the values
     srchStage = document.getElementById("getStage").value;
     srchLoc = document.getElementById("getLocation").value;
     srchSector = document.getElementById("getSector").value;
     "use strict";
+    // Change the URL to the loading screen
     location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
     
     // Get the JSON file first and other pre stuff
@@ -24,8 +32,11 @@ function formToResults() {
     var jsonFile = JSON.parse();
     
     // Set up finder thing
+    // Length of the answer array
     var maxPts = (srchSector.length * 2) + 1;
+    // The answer array
     var selections = [];
+    // A loop to initialize the answer array with more empty arrays
     var repeat;
     for (repeat = 0; repeat < maxPts; repeat += 1) {
         selections.push([]); // Push in a new empty array
@@ -33,23 +44,27 @@ function formToResults() {
     
     // Add up points -1 and if > 0 (since only 1pt (-1pt = 0pt) if only location match which is no good), put into selections[pts].push(jsonFile[ind])
     var tempPts;
+    // A loop that goes through all of the json file to look at each investor
     var ind;
     for (ind = 0; ind < jsonFile.length; ind += 1) {
 
         // Set to -1 to reset to default value
+        // -1 is default value so any investor with no match or just a +1pt (location) match are ignored
         tempPts = -1;
 
         // Only care at all if the stage matches
+        // Check if the set containing all the investor's stages has the stage the company applying is in
         if (new Set(jsonFile[ind].stage).has(srchStage)) {
 
             // Search if same location and assign a point if so
-            // Only check while tempPts == 0 since if it == 1, then it's already found it's answer
             if (new Set(jsonFile[ind].location).has(srchLoc)) {
                 tempPts += 1;
             }
 
             // Now search for matches in sectors
             // Create 2 sets, set estSize to their sizes added together, union them and tempPts+=2*(estSize-union.size);
+            // This uses the logic that a set doesn't copy duplicates, so each duplicate (match) would result in the combined size
+            //  being 1 less per match than just the sizes of both sets added together. Then for each discrepancy, multiple by their point value of 2
             var estSize = srchSector.length + jsonFile[ind].sectors.length;
             var set = new Set(srchSector);
             jsonFile[ind].sectors.forEach(set.add, set);
@@ -62,23 +77,22 @@ function formToResults() {
         }
     }
     
+    // Replace the URL with that of the results screen
     location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
     
-    // Put underneath, the code for displaying the results
-    
-    // ************************ It seems that .appendChild might actually append to the end, contrary to what was believed earlier in the project. May need to reverse the order of the code
-    
+    // Create 3 looping variables and a results count for determining if any matches were made
     var pointLoop, vcLoop, resultsCount = 0;
-    for (pointLoop = 1; pointLoop < selections.length; pointLoop ++) {
-        // Create a large "table" for all vc's in this "league"
-        var tabel = document.createElement("TABLE");
-        tabel.setAttribute("id", "table"+pointLoop);
-        document.body.appendChild(tabel);
+    // Loop through all the matches from most points to least
+    for (pointLoop = selections.length; pointLoop >= 0; pointLoop --) {
         // Create a title for the table
         var head1 = document.createElement("H1");
         head1.setAttribute("id", "header1"+pointLoop);
         head1.innerHtML = pointLoop+"/"+(selections.length-1)+" Point Matches";
         document.body.appendChild(head1);
+        // Create a large "table" for all vc's in this "league"
+        var tabel = document.createElement("TABLE");
+        tabel.setAttribute("id", "table"+pointLoop);
+        document.body.appendChild(tabel);
         var currentRow;
         // Loop through all the VC's in this league
         resultsCount += selections[pointLoop].length;
@@ -98,23 +112,21 @@ function formToResults() {
             head2.innerHTML = selections[pointLoop].name;
             para.innerHTML = "Company Name: "+selections[pointLoop].company+"<br><br>Company Location: "+selections[pointLoop].location+"<br><br>Stage: "+selections[pointLoop].stage+"<br><br>Sectors: "+selections[pointLoop].sectors+"<br><br>";
             // Append all to their respective "parents"
-            curCell.appendChild(para);
             curCell.appendChild(head2);
+            curCell.appendChild(para);
             currentRow.appendChild(curCell);
         }
         // Append the row
-        document.getElementById().appendChild(currentRow);
+        document.getElementById("table"+pointLoop).appendChild(currentRow);
+        // Append a break for spacing
         document.body.appendChild(document.createElement("BR"));
     }
-  
+    // If no matches were made, display an apology message
     if(resultsCount == 0) {
         var srryMes = document.createElement("P");
         srryMes.innerHTML = "Sorry, no VCs were found to match with your company";
         document.body.appendChild(srryMes);
     }
-    
-    
-    // To here
     
     return false;
 }
