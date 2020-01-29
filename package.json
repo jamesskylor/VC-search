@@ -1,0 +1,23 @@
+{
+  "name": "atom-capital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blackbox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jackiehj-Liu/atom-capital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jackiehj-Liu/atom-capital/issues"
+  },
+  "homepage": "https://github.com/Jackiehj-Liu/atom-capital#readme",
+  "dependencies": {
+    "papaparse": "^5.1.1"
+  }
+}
