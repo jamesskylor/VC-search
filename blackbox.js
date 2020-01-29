@@ -13,6 +13,9 @@ document.getElementById("theForm").addEventListener('submit', (e)=>{
 
 function formToResults() {
     var srchStage, srchLoc, srchSector;
+    srchStage = document.getElementById("getStage").value;
+    srchLoc = document.getElementById("getLocation").value;
+    srchSector = document.getElementById("getSector").value;
     "use strict";
     location.assign("https://www.google.ca");
     
@@ -63,6 +66,7 @@ function formToResults() {
     
     // Put underneath, the code for displaying the results
     
+    // ************************ It seems that .appendChild might actually append to the end, contrary to what was believed earlier in the project. May need to reverse the order of the code
     
     var pointLoop, vcLoop, resultsCount = 0;
     for (pointLoop = 1; pointLoop < selections.length; pointLoop ++) {
