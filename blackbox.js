@@ -133,8 +133,8 @@ function formToResults() {
             var head2 = document.createElement("H2");
             var para = document.createElement("P");
             // Set values for headers and paragraph
-            head2.innerHTML = selections[pointLoop].name;
-            para.innerHTML = "Company Name: "+selections[pointLoop].company+"<br><br>Company Location: "+selections[pointLoop].location+"<br><br>Stage: "+selections[pointLoop].stage+"<br><br>Sectors: "+selections[pointLoop].sectors+"<br><br>";
+            head2.innerHTML = selections[pointLoop][vcLoop].name;
+            para.innerHTML = "Company Name: "+selections[pointLoop][vcLoop].company+"<br><br>Company Location: "+selections[pointLoop][vcLoop].location+"<br><br>Stage: "+selections[pointLoop][vcLoop].stage+"<br><br>Sectors: "+selections[pointLoop][vcLoop].sectors+"<br><br>";
             // Append all to their respective "parents"
             curCell.appendChild(head2);
             curCell.appendChild(para);
