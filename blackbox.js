@@ -115,12 +115,13 @@ function formToResults() {
 }
     
 
-=======
+
         } 
     }
     console.log(srchSector);
+
         console.log(srchLoc)
->>>>>>> commit
+
     /*
     // Replace the URL with that of the results screen
 
