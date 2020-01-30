@@ -17,6 +17,14 @@
         <script src=https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.js></script>
         <script src=csv-to-json.js> </script> 
         
+
+        <script> 
+                Papa.parse(fileInput.files[0], {
+	             complete: function(results) {
+		         console.log(results);
+                 }
+	}
+     }); </script>
         <style>
             div {
                 align-self: center;
