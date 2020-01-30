@@ -98,9 +98,10 @@ function formToResults() {
             if (tempPts > 0) {
                 selections[tempPts].push(jsonFile[ind]);
             }
-        } console.log(srchSector);
-        console.log(srchLoc)
+        } 
     }
+    console.log(srchSector);
+        console.log(srchLoc)
     /*
     // Replace the URL with that of the results screen
      location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
@@ -155,8 +156,8 @@ function formToResults() {
     
     return false;
 }
-*/
 
+*/
 /*
 
 Format for JSON file
