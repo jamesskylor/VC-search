@@ -1,9 +1,9 @@
 [{
 		"name": "peter",
 		"company": "smile",
-		"stage": ["seed", "A+"],
-		"location": ["toronto", "New York"],
-		"sectors": ["AgTech", "robotics"]
+		"stage": ["Seed", "A+"],
+		"location": ["Toronto", "New York"],
+		"sectors": ["Agtech", "Robotics"]
 	},
     
     {
