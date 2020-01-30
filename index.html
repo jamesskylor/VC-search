@@ -19,11 +19,13 @@
         
 
         <script> 
-                Papa.parse("https://jackiehj-liu.github.io/atom-capital/atom-capital.js", {
+               Papa.parse("http://example.com/file.csv", {
 	download: true,
-	
-})
-	; </script> 
+	complete: function(results) {
+		console.log(results);
+	}
+});
+	</script> 
         // using the papa parsing library to parse the data and then adding arrays to it after, prob will have to move it to a different js page and then use.
         <style>
             div {
