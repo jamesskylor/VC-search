@@ -108,11 +108,13 @@ function formToResults() {
 
 
 
+
         } console.log(srchSector);
 
 
 
         console.log(srchLoc);
+
 
 
 
@@ -127,14 +129,6 @@ function formToResults() {
 
 }
     
-
-
-   
-   
-
-
-
-
 
     /*
     // Replace the URL with that of the results screen
