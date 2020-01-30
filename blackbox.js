@@ -196,23 +196,11 @@ function formToResults() {
     
     return false;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-*/
-
-
-=======
-=======
-*/
->>>>>>> commit
-=======
->>>>>>> commit
 
 */
-/*
->>>>>>> commit
+
+
+
 
 /*
 Format for JSON file
