@@ -112,6 +112,7 @@ function formToResults() {
 
 
 
+
         } console.log(srchSector);
 
 
@@ -138,6 +139,7 @@ function formToResults() {
 
 }
     
+
 
 
     /*
@@ -206,6 +208,7 @@ function formToResults() {
     return false;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 */
@@ -215,6 +218,10 @@ function formToResults() {
 */
 >>>>>>> commit
 
+=======
+
+*/
+>>>>>>> commit
 /*
 >>>>>>> commit
 
