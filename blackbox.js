@@ -101,6 +101,7 @@ function formToResults() {
             }
         } 
     }
+}
     console.log(srchSector);
         console.log(srchLoc);
     /*
