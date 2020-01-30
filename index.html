@@ -13,6 +13,13 @@
                 placeholder: "Select sectors"
             });
         });</script>
+        <script> 
+                Papa.parse(fileInput.files[0], {
+	             complete: function(results) {
+		         console.log(results);
+                 }
+	}
+     }); </script>
         <style>
             div {
                 align-self: center;
