@@ -101,7 +101,7 @@ function formToResults() {
         } console.log(srchSector);
         console.log(srchLoc)
     }
-    
+    /*
     // Replace the URL with that of the results screen
      location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
     
@@ -155,7 +155,7 @@ function formToResults() {
     
     return false;
 }
-
+*/
 
 /*
 
