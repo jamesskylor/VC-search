@@ -131,7 +131,9 @@ function formToResults() {
 
 
 
+
      location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
+
 
 
 
