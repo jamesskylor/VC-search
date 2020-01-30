@@ -113,7 +113,9 @@ function formToResults() {
     /*
     // Replace the URL with that of the results screen
 
+
      location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
+
 
     
     // Create 3 looping variables and a results count for determining if any matches were made
