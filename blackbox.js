@@ -101,8 +101,10 @@ function formToResults() {
             }
 
 
+
         } console.log(srchSector);
         console.log(srchLoc);
+
 
 
     }
@@ -110,7 +112,11 @@ function formToResults() {
     
     /*
     // Replace the URL with that of the results screen
+<<<<<<< HEAD
      location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
+=======
+    */ location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
+>>>>>>> commit
     
     // Create 3 looping variables and a results count for determining if any matches were made
     var pointLoop, vcLoop, resultsCount = 0;
