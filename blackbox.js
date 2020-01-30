@@ -99,8 +99,10 @@ function formToResults() {
             if (tempPts > 0) {
                 selections[tempPts].push(jsonFile[ind]);
             }
+
         } console.log(srchSector);
         console.log(srchLoc);
+
     }
 }
     
@@ -159,7 +161,11 @@ function formToResults() {
     return false;
 }
 
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> commit
 /*
 
 Format for JSON file
