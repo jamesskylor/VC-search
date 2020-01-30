@@ -109,11 +109,13 @@ function formToResults() {
 
 
 
+
         } console.log(srchSector);
 
 
 
         console.log(srchLoc);
+
 
 
 
@@ -193,8 +195,13 @@ function formToResults() {
     return false;
 }
 
+<<<<<<< HEAD
 */
 
+=======
+
+/*
+>>>>>>> commit
 
 
 
