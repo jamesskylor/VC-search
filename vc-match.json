@@ -1,17 +1,17 @@
 [{
-		"name": "aklk",
-		"company": "adasdl",
-		"stage": ["lkmkmamksdl", "mkalmdal"],
-		"location": ["anmdkamldas", "admalmadkl"],
-		"sectors": ["najkndas", "ndsalam"]
+		"name": "peter",
+		"company": "smile",
+		"stage": ["seed", "A+"],
+		"location": ["toronto", "New York"],
+		"sectors": ["AgTech", "robotics"]
 	},
     
     {
-		"name": "aklk",
+		"name": "tom",
 		"company": "adasdl",
 		"stage": ["lkmkmamksdl", "mkalmdal"],
 		"location": ["anmdkamldas", "admalmadkl"],
-		"sectors": ["najkndas", "ndsalam"]
+		"sectors": ["AI", "AgTech"]
 	}
 
 
