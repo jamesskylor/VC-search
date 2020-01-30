@@ -120,12 +120,14 @@ function formToResults() {
 
     }
 
+
 }
     
 
 
    
    
+
 
 
     /*
@@ -190,12 +192,16 @@ function formToResults() {
     
     return false;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 */
 
 
 =======
+=======
+*/
+>>>>>>> commit
 
 /*
 >>>>>>> commit
