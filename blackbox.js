@@ -135,8 +135,10 @@ function formToResults() {
 
 
 
+
 }
     
+
 
     /*
     // Replace the URL with that of the results screen
@@ -203,11 +205,15 @@ function formToResults() {
     
     return false;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 */
 
 =======
+=======
+*/
+>>>>>>> commit
 
 /*
 >>>>>>> commit
