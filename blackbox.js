@@ -84,6 +84,7 @@ function formToResults() {
         // Loop through all the matches from most points to least
         for (pointLoop = selections.length-1; pointLoop >= 0; pointLoop --) {
             // Create a title for the table
+            if(selections[pointLoop].length <= 0) continue;
             var head1 = document.createElement("H1");
             head1.setAttribute("id", "header1"+pointLoop);
             head1.innerHTML = pointLoop+"/"+(selections.length-1)+" Point Matches";
