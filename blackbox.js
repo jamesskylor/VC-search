@@ -98,7 +98,7 @@ function formToResults() {
             if (tempPts > 0) {
                 selections[tempPts].push(jsonFile[ind]);
             }
-        } console.log(srchStage);
+        } 
     }
     
     // Replace the URL with that of the results screen
