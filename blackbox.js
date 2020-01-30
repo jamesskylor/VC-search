@@ -22,7 +22,8 @@ function formToResults() {
     // Get the values
     srchStage = document.getElementById("getStage").value;
     srchLoc = document.getElementById("getLocation").value;
-    srchSector = document.getElementById("getSector").value;
+    var selectedSectors = document.querySelectorAll('#getSector option:checked');
+    srchSector = Array.from(selectedSectors).map(sel => sel.value);
     "use strict";
     // Change the URL to the loading screen
     location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
