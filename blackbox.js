@@ -1,8 +1,7 @@
 
 /*
 To Do:
-- Code the way you recieve the JSON file
-- Code the way to recieve the answers to the form
+- Test and Fix the results printing
 */
 
 // Create an event listener for the submission of the form
@@ -17,6 +16,22 @@ document.getElementById("theForm").addEventListener('submit', (e)=>{
 // This function moves the browser from the form to the loading screen, does the matching and then moves you to a completed results page
 // It requires that the page it is called on is a form with the required variables shown below
 function formToResults() {
+    // Load JSON File
+    function loadJSON(callback) {
+        // Create a new XMLHttpRequest
+        var xobj = new XMLHttpRequest();
+        // Override the original task
+        xobj.overrideMimeType("application/json");
+        // Open the JSON file
+        xobj.open('GET', 'https://jackiehj-liu.github.io/atom-capital/vc-match.json', false);
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);
+    }
     // Initialize the variables we need for calculations before switching the page
     var srchStage, srchLoc, srchSector;
     // Get the values
@@ -28,9 +43,17 @@ function formToResults() {
     // Change the URL to the loading screen
     location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
     
-    // Get the JSON file first and other pre stuff
-    // The other info is part of the arguments
-    var jsonFile = JSON.parse();
+    // Parse the json file
+    var jsonFile;
+    // Create the initialization function for parsing JSON
+    function init() {
+        loadJSON(function(response) {
+            // Parse JSON string into object
+            var jsonFile = JSON.parse(response);
+        });
+    }
+    // Parse JSON
+    init();
     
     // Set up finder thing
     // Length of the answer array
@@ -133,42 +156,6 @@ function formToResults() {
 }
 
 /*
-Ascending loop of selections
-    Check if <= 0 vc then continue
-    Create h1 for that table
-    Create table
-    Loop through VCs
-        check if current loopVal % 2 == 0
-            Create row and append to table
-        Create cell and append in current row
-        Append h2 in current cell
-        Create p w/ information
-        Append p in current cell
-    Create space to next table
-*/
-
-/*
-
-// Get the JSON file first and other pre stuff
-// Get info on what the searcher is looking for
-
-var jsonFile = JSON.parse();
-var srchStage = ""; // Mandatory
-var srchLoc = ""; // Matching = +1 pt
-var srchSector = []; // Matching = +2 pts per match
-
-// Set up finder thing
-var maxPts = (srchSector.length * 2) + 1;
-var selections = [];
-var repeat;
-for (repeat = 0; repeat < maxPts; repeat += 1) {
-    selections.push([]); // Push in a new empty array
-}
-// Create an array that holds key of maxPoint : Set<All companies with matching # points>
-
-*/
-
-/*
 
 Format for JSON file
 
@@ -197,44 +184,6 @@ Format for JSON file
 ]
 
 */
-
-/*
-
-// Add up points -1 and if > 0 (since only 1pt (-1pt = 0pt) if only location match which is no good), put into selections[pts].push(jsonFile[ind])
-var tempPts;
-var ind;
-for (ind = 0; ind < jsonFile.length; ind += 1) {
-    
-    // Set to -1 to reset to default value
-    tempPts = -1;
-    
-    // Only care at all if the stage matches
-    if (new Set(jsonFile[ind].stage).has(srchStage)) { // Fix w/ set.has() srchStage
-        
-        // Search if same location and assign a point if so
-        // Only check while tempPts == 0 since if it == 1, then it's already found it's answer
-        var locSrch;
-        if(new Set(jsonFile[ind].location).has(srchLoc)) {
-            tempPts += 1;
-        }
-        
-        // Now search for matches in sectors
-        // Create 2 sets, set estSize to their sizes added together, union them and tempPts+=2*(estSize-union.size);
-        var estSize = srchSector.length + jsonFile[ind].sectors.length;
-        var set = new Set(srchSector);
-        jsonFile[ind].sectors.forEach(set.add, set);
-        tempPts += 2 * (estSize - set.size);
-        
-        // Put the investor into an array storing the information on how good a match they are
-        if (tempPts > 0) {
-            selections[tempPts].push(jsonFile[ind]);
-        }
-    }
-}
-
-*/
-
-
 
 
 
