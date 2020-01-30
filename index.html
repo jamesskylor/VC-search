@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en">
-    
+    */ using the papa parsing library to parse the data and then adding arrays to it after, prob will have to move it to a different js page and then use. */
     
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,8 +12,11 @@
             $(".js-example-basic-multi").select2({
                 placeholder: "Select sectors"
             });
+                
         });</script>
+        <script src="PapaParse/papaparse.js"></script>
         <script> 
+            
                Papa.parse("http://example.com/file.csv", {
 	download: true,
 	complete: function(results) {
@@ -21,7 +24,7 @@
 	}
 });
 	</script> 
-        // using the papa parsing library to parse the data and then adding arrays to it after, prob will have to move it to a different js page and then use.
+        
         <style>
             div {
                 align-self: center;
