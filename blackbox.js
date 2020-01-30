@@ -18,17 +18,20 @@ document.getElementById("theForm").addEventListener('submit', (e)=>{
 // It requires that the page it is called on is a form with the required variables shown below
 function formToResults() {
     // Load JSON File
-    function loadJSON(callback) {   
+    function loadJSON(callback) {
+        // Create a new XMLHttpRequest
         var xobj = new XMLHttpRequest();
+        // Override the original task
         xobj.overrideMimeType("application/json");
-        xobj.open('GET', 'vc-match.json', false); // Replace 'my_data' with the path to your file
+        // Open the JSON file
+        xobj.open('GET', 'vc-match.json', false);
         xobj.onreadystatechange = function () {
             if (xobj.readyState == 4 && xobj.status == "200") {
                 // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
                 callback(xobj.responseText);
             }
         };
-        xobj.send(null);  
+        xobj.send(null);
     }
     // Initialize the variables we need for calculations before switching the page
     var srchStage, srchLoc, srchSector;
@@ -41,17 +44,16 @@ function formToResults() {
     // Change the URL to the loading screen
     location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
     
-    // Get the JSON file first and other pre stuff
-    // The other info is part of the arguments
+    // Parse the json file
     var jsonFile;
-    
+    // Create the initialization function for parsing JSON
     function init() {
         loadJSON(function(response) {
             // Parse JSON string into object
-            var actual_JSON = JSON.parse(response);
+            var jsonFile = JSON.parse(response);
         });
     }
-    
+    // Parse JSON
     init();
     
     // Set up finder thing
