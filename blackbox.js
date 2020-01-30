@@ -100,8 +100,10 @@ function formToResults() {
                 selections[tempPts].push(jsonFile[ind]);
             }
 
+
         } console.log(srchSector);
         console.log(srchLoc);
+
 
     }
 }
