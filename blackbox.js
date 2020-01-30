@@ -99,7 +99,7 @@ function formToResults() {
             if (tempPts > 0) {
                 selections[tempPts].push(jsonFile[ind]);
             }
-<<<<<<< HEAD
+
 
 
 
@@ -116,12 +116,9 @@ function formToResults() {
     
 
 
-        } 
-    }
-}
-    console.log(srchSector);
+   
+   
 
-        console.log(srchLoc)
 
     /*
     // Replace the URL with that of the results screen
