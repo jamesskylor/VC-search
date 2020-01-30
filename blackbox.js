@@ -17,6 +17,19 @@ document.getElementById("theForm").addEventListener('submit', (e)=>{
 // This function moves the browser from the form to the loading screen, does the matching and then moves you to a completed results page
 // It requires that the page it is called on is a form with the required variables shown below
 function formToResults() {
+    // Load JSON File
+    function loadJSON(callback) {   
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', 'vc-match.json', false); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+                // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+                callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);  
+    }
     // Initialize the variables we need for calculations before switching the page
     var srchStage, srchLoc, srchSector;
     // Get the values
@@ -30,7 +43,16 @@ function formToResults() {
     
     // Get the JSON file first and other pre stuff
     // The other info is part of the arguments
-    var jsonFile = JSON.parse();
+    var jsonFile;
+    
+    function init() {
+        loadJSON(function(response) {
+            // Parse JSON string into object
+            var actual_JSON = JSON.parse(response);
+        });
+    }
+    
+    init();
     
     // Set up finder thing
     // Length of the answer array
