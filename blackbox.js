@@ -99,6 +99,7 @@ function formToResults() {
             if (tempPts > 0) {
                 selections[tempPts].push(jsonFile[ind]);
             }
+<<<<<<< HEAD
 
 
 
@@ -114,6 +115,12 @@ function formToResults() {
 }
     
 
+=======
+        } 
+    }
+    console.log(srchSector);
+        console.log(srchLoc)
+>>>>>>> commit
     /*
     // Replace the URL with that of the results screen
 
@@ -172,18 +179,12 @@ function formToResults() {
     
     return false;
 }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 */
-=======
-=======
-*/
->>>>>>> commit
 
->>>>>>> commit
+
+
 /*
-
 Format for JSON file
 
 [
