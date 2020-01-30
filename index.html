@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en">
-    */ using the papa parsing library to parse the data and then adding arrays to it after, prob will have to move it to a different js page and then use. */
+    
     
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -14,11 +14,12 @@
             });
                 
         });</script>
-        <script src="PapaParse/papaparse.js"></script>
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.js></script>
         <script> 
             
-               Papa.parse("https://jackiehj-liu.github.io/atom-capital/loadScreen.html", {
+               Papa.parse("https://jackiehj-liu.github.io/atom-capital/atom-capital.csv", {
 	download: true,
+    header: true,
 	complete: function(results) {
 		console.log(results);
 	}
