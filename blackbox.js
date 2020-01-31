@@ -10,13 +10,7 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-Papa.parse("https://jackiehj-liu.github.io/atom-capital/atom-capital.csv", {
-	download: true,
-    header: true,
-	complete: function(results) {
-		console.log(results);
-	}
-     });
+
 
 // Function that retrieves a cookie
 function getCookie(cname) {
