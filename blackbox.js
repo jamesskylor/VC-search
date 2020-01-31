@@ -88,7 +88,7 @@ function loadMatches () {
         var tempStrings = JSON.stringify(selections);
         setCookie("select", tempStrings, 1);
         // Replace the URL with that of the results screen
-        location.replace("results.html"); // ********************************************************** Change back to url later
+        location.replace("https://jackiehj-liu.github.io/atom-capital/results.html");
         return false;
     });
 }
