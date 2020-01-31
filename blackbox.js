@@ -83,7 +83,6 @@ function loadMatches () {
                 }
             }
         }
-        console.log(selections);
         // Create Cookie by first stringifying the object
         var tempStrings = JSON.stringify(selections);
         setCookie("select", tempStrings, 1);
