@@ -9,7 +9,39 @@
     {
 		"name": "tom",
 		"company": "adasdl",
-		"stage": ["lkmkmamksdl", "mkalmdal"],
+		"stage": ["Seed", "mkalmdal"],
+		"location": ["anmdkamldas", "admalmadkl"],
+		"sectors": ["AI", "AgTech"]
+	},
+    
+    {
+		"name": "bob",
+		"company": "adasdl",
+		"stage": ["Seed", "mkalmdal"],
+		"location": ["anmdkamldas", "admalmadkl"],
+		"sectors": ["AI", "AgTech"]
+	},
+    
+    {
+		"name": "tom",
+		"company": "adasdl",
+		"stage": ["Seed", "mkalmdal"],
+		"location": ["anmdkamldas", "admalmadkl"],
+		"sectors": ["AI", "AgTech"]
+	},
+    
+    {
+		"name": "tom",
+		"company": "adasdl",
+		"stage": ["Seed", "mkalmdal"],
+		"location": ["anmdkamldas", "admalmadkl"],
+		"sectors": ["AI", "AgTech"]
+	},
+    
+    {
+		"name": "tom",
+		"company": "adasdl",
+		"stage": ["Seed", "mkalmdal"],
 		"location": ["anmdkamldas", "admalmadkl"],
 		"sectors": ["AI", "AgTech"]
 	}
