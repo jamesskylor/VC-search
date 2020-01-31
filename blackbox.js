@@ -42,7 +42,7 @@ function formToResults() {
     srchSector = Array.from(selectedSectors).map(sel => sel.value);
     "use strict";
     // Change the URL to the loading screen
-    location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
+    //location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
     
     // Parse the json file
     var jsonFile;
