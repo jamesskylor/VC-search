@@ -159,6 +159,7 @@ function formToResults() {
 
 
 
+
     
     // Create 3 looping variables and a results count for determining if any matches were made
     var pointLoop, vcLoop, resultsCount = 0;
@@ -224,7 +225,10 @@ function formToResults() {
 =======
 
 */
+<<<<<<< HEAD
 >>>>>>> commit
+=======
+>>>>>>> d48759614e18faf8aa4b76fac306dc720e9511a3
 /*
 >>>>>>> commit
 
