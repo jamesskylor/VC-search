@@ -1,10 +1,10 @@
 
 /*
 To Do:
-- Test and Fix the results printing
-- Use Cookies to transfer information between pages
+- Test and Fix the results printing (for new JSON file)
 */
 
+// Function that creates cookies
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -14,15 +14,13 @@ function setCookie(cname, cvalue, exdays) {
 
 // Create an event listener for the submission of the form
 document.getElementById("theForm").addEventListener('submit', (e)=>{
-    //e.stopPropagation(); // This is pointless code, we didn't end up needing it
     // Prevent the form from submitting and interrupting the JS
     e.preventDefault();
     // Call on the function to run and do all the operations
     formToResults();
 });
 
-// This function moves the browser from the form to the loading screen, does the matching and then moves you to a completed results page
-// It requires that the page it is called on is a form with the required variables shown below
+// This function creates cookies to send to the blackbox
 function formToResults() {
     // Initialize the variables we need for calculations before switching the page
     var srchStage, srchLoc, srchSector;
@@ -32,13 +30,9 @@ function formToResults() {
     var selectedSectors = document.querySelectorAll('#getSector option:checked');
     srchSector = Array.from(selectedSectors).map(sel => sel.value);
     // Set the cookies
-
-
     setCookie("searchStage", srchStage, 1);
     setCookie("searchLoc", srchLoc, 1);
     setCookie("searchSector", srchSector, 1);
-
-
     "use strict";
     // Change the URL to the loading screen
     location.assign("loadScreen.html"); // ************************************************************************* Change back to url later

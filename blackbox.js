@@ -1,10 +1,9 @@
 // Create an event listener document to load
-console.log("Opened");
 window.addEventListener('load', (e)=>{
-    console.log("Loaded");
     loadMatches();
 });
 
+// Function that creates a cookie
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -12,6 +11,7 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
+// Function that retrieves a cookie
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -30,18 +30,14 @@ function getCookie(cname) {
 
 function loadMatches () {
     "use strict";
-    // Read the cookies
+    // Load the JSON file
     var jsonFile;
     $.getJSON('https://jackiehj-liu.github.io/atom-capital/vc-match.json', function(jsonFile) {
+        // Read the cookies
         var srchStage = getCookie("searchStage");
         var srchLoc = getCookie("searchLoc");
         var sectorString = getCookie("searchSector");
         var srchSector = sectorString.split(",");
-
-        console.log(srchStage);
-        console.log(srchLoc);
-        console.log(srchSector);
-
         // Set up finder thing
         // Length of the answer array
         var maxPts = (srchSector.length * 2) + 1;
@@ -88,14 +84,9 @@ function loadMatches () {
             }
         }
         console.log(selections);
-        // Create Cookie
+        // Create Cookie by first stringifying the object
         var tempStrings = JSON.stringify(selections);
-        console.log(tempStrings);
-
         setCookie("select", tempStrings, 1);
-        
-        console.log(getCookie("select"));
-
         // Replace the URL with that of the results screen
         location.replace("results.html"); // ********************************************************** Change back to url later
         return false;

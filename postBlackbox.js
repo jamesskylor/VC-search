@@ -1,10 +1,10 @@
 // Create an event listener for document to load
-console.log("Opened");
 window.addEventListener('load', (e)=>{
-    console.log("Loaded");
+    // Once Loaded, Print out the matches from cookies
     printMatches();
 });
 
+// Function gets a cookie on the document to then return its value
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -24,10 +24,7 @@ function getCookie(cname) {
 function printMatches () {
     "use strict";
     // Get cookies
-    
     var selections = JSON.parse(getCookie("select"));
-    console.log(selections);
-    
     // Create 3 looping variables and a results count for determining if any matches were made
     var pointLoop, vcLoop, resultsCount = 0;
     // Loop through all the matches from most points to least
