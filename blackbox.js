@@ -211,26 +211,10 @@ function formToResults() {
     
     return false;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-*/
-
-=======
-=======
-*/
->>>>>>> commit
-
-=======
 
 */
-<<<<<<< HEAD
->>>>>>> commit
-=======
->>>>>>> d48759614e18faf8aa4b76fac306dc720e9511a3
-/*
->>>>>>> commit
+
+
 
 
 
