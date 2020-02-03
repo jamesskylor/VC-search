@@ -1015,7 +1015,7 @@
     "location": ["Toronto", "Canada"],
     "Email": "https://www.inovia.vc/contact",
     "Social Link": "https://www.inovia.vc/people/shawn-abbott",
-    "sectors": ["AI", "Enterprise", "FIntech", "Healthcare"]
+    "sectors": ["AI", "Enterprise", "Fintech", "Healthcare"]
   },
   {
     "name": "Janet Bannister",
@@ -1033,7 +1033,7 @@
     "location": ["Toronto", "Canada"],
     "Email": "cournoyerjs@realventures.com",
     "Social Link": "https://realventures.com/team/",
-    "sectors": ["AI", "AR/VR", "Biotech", "Blockchain", "Education", "Energy", "FintechHealthcare", ""]
+    "sectors": ["AI", "AR/VR", "Biotech", "Blockchain", "Education", "Energy", "Fintech", "Healthcare"]
   },
   {
     "name": "John Albright",
@@ -1060,7 +1060,7 @@
     "location": ["Toronto", "Canada"],
     "Email": "dsteel@omersventures.com",
     "Social Link": "https://www.omersventures.com/Team/Investments/Damien-Steel",
-    "sectors": ["Agtech", "AI", "AR/VR", "Biotech", "Blockchain", "Cars/Autonomous Vehicles", "Cleantech", "Consumer Products", "Developer tools", "Education", "Energy", "Enterprise", "Fintech", "Hardware", "Manufacturing", "Marketplaces", "Robotics", ""]
+    "sectors": ["Agtech", "AI", "AR/VR", "Biotech", "Blockchain", "Cars/Autonomous Vehicles", "Cleantech", "Consumer Products", "Developer tools", "Education", "Energy", "Enterprise", "Fintech", "Hardware", "Manufacturing", "Marketplaces", "Robotics"]
   },
   {
     "name": "Hunter Walk",
