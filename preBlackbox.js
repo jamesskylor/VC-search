@@ -4,14 +4,6 @@ To Do:
 - Test and Fix the results printing (for new JSON file)
 */
 
-// Function that creates cookies
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
 // Create an event listener for the submission of the form
 document.getElementById("theForm").addEventListener('submit', (e)=>{
     // Prevent the form from submitting and interrupting the JS
@@ -29,12 +21,6 @@ function formToResults() {
     srchLoc = document.getElementById("getLocation").value;
     var selectedSectors = document.querySelectorAll('#getSector option:checked');
     srchSector = Array.from(selectedSectors).map(sel => sel.value);
-    // Set the cookies
-    /*
-    setCookie("searchStage", srchStage, 1);
-    setCookie("searchLoc", srchLoc, 1);
-    setCookie("searchSector", srchSector, 1);
-    */
     // Store for session
     sessionStorage.searchStage = srchStage;
     sessionStorage.searchLoc = srchLoc;
@@ -45,35 +31,6 @@ function formToResults() {
     return false;
 }
 
-/*
-
-Format for JSON file
-
-[
-    {
-        "name": "",
-        "company": "",
-        "stage": ["", ""],
-        "location": ["", ""],
-        "sectors"; ["", ""]
-    },
-    {
-        "name": "",
-        "company": "",
-        "stage": ["", ""],
-        "location": ["", ""],
-        "sectors"; ["", ""]
-    },
-    {
-        "name": "",
-        "company": "",
-        "stage": ["", ""],
-        "location": ["", ""],
-        "sectors"; ["", ""]
-    }
-]
-
-*/
 
 
 

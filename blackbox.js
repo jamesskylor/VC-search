@@ -4,32 +4,6 @@ window.addEventListener('load', (e)=>{
     loadMatches();
 });
 
-// Function that creates a cookie
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-
-// Function that retrieves a cookie
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
 function loadMatches () {
     "use strict";
     // Load the JSON file
@@ -38,12 +12,6 @@ function loadMatches () {
     $.getJSON('/atom-capital/vc-match.json', function(jsonFile) { // https://jsonlint.com/ to validate it is a proper JSON if it is not working
         // Read the cookies
         console.log("loaded");
-        /*
-        var srchStage = getCookie("searchStage");
-        var srchLoc = getCookie("searchLoc");
-        var sectorString = getCookie("searchSector");
-        var srchSector = sectorString.split(",");
-        */
         // Get info from sessionStorage
         var srchStage = sessionStorage.searchStage;
         var srchLoc = sessionStorage.searchLoc;
@@ -93,11 +61,9 @@ function loadMatches () {
                 }
             }
         }
-        // Create Cookie by first stringifying the object
+        // First stringifying the object
         var tempStrings = JSON.stringify(selections);
-        /*
-        setCookie("select", tempStrings, 1);
-        */
+        // Store into sessionStorage
         sessionStorage.select = tempStrings;
         // Replace the URL with that of the results screen
         location.replace("/atom-capital/results.html");

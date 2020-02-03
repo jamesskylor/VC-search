@@ -4,29 +4,9 @@ window.addEventListener('load', (e)=>{
     printMatches();
 });
 
-// Function gets a cookie on the document to then return its value
-function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
 function printMatches () {
     "use strict";
-    // Get cookies
-    /*
-    var selections = JSON.parse(getCookie("select"));
-    */
+    // Get data
     var selections = JSON.parse(sessionStorage.select);
     // Create 3 looping variables and a results count for determining if any matches were made
     var pointLoop, vcLoop, resultsCount = 0;
