@@ -1,5 +1,6 @@
 // Create an event listener document to load
 window.addEventListener('load', (e)=>{
+    console.log("Opened");
     loadMatches();
 });
 
@@ -32,9 +33,11 @@ function getCookie(cname) {
 function loadMatches () {
     "use strict";
     // Load the JSON file
-    var jsonFile;
-    $.getJSON('/atom-capital/vc-match.json', function(jsonFile) { // *************************************** IDK if jQuery requires the full url so if something goes wrong, it's probably this
+    var jsonFile
+    console.log("loading");
+    $.getJSON('https://jackiehj-liu.github.io/atom-capital/vc-match.json', function(jsonFile) { // *************************************** IDK if jQuery requires the full url so if something goes wrong, it's probably this
         // Read the cookies
+        console.log("loaded");
         var srchStage = getCookie("searchStage");
         var srchLoc = getCookie("searchLoc");
         var sectorString = getCookie("searchSector");
@@ -55,7 +58,7 @@ function loadMatches () {
         // A loop that goes through all of the json file to look at each investor
         var ind;
         for (ind = 0; ind < jsonFile.length; ind += 1) {
-
+            console.log(ind);
             // Set to -1 to reset to default value
             // -1 is default value so any investor with no match or just a +1pt (location) match are ignored
             tempPts = -1;
@@ -91,4 +94,5 @@ function loadMatches () {
         location.replace("/atom-capital/results.html");
         return false;
     });
+    console.log("done");
 }
