@@ -7,7 +7,7 @@ window.addEventListener('load', (e)=>{
 function printMatches () {
     "use strict";
     // Get data
-    var selections = JSON.parse(sessionStorage.select);
+    var selections = JSON.parse(sessionStorage.getItem("select"));
     // Create 3 looping variables and a results count for determining if any matches were made
     var pointLoop, vcLoop, resultsCount = 0;
     // Loop through all the matches from most points to least

@@ -13,9 +13,9 @@ function loadMatches () {
         // Read the cookies
         console.log("loaded");
         // Get info from sessionStorage
-        var srchStage = sessionStorage.searchStage;
-        var srchLoc = sessionStorage.searchLoc;
-        var srchSector = JSON.parse(sessionStorage.searchSector);
+        var srchStage = sessionStorage.getItem("searchStage");
+        var srchLoc = sessionStorage.getItem("searchLoc");
+        var srchSector = JSON.parse(sessionStorage.getItem("searchSector"));
         // Set up finder thing
         // Length of the answer array
         var maxPts = (srchSector.length * 2) + 1;
@@ -64,7 +64,7 @@ function loadMatches () {
         // First stringifying the object
         var tempStrings = JSON.stringify(selections);
         // Store into sessionStorage
-        sessionStorage.select = tempStrings;
+        sessionStorage.setItem("select", tempStrings);
         // Replace the URL with that of the results screen
         location.replace("/atom-capital/results.html");
         return false;

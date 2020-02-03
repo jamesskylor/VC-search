@@ -22,9 +22,9 @@ function formToResults() {
     var selectedSectors = document.querySelectorAll('#getSector option:checked');
     srchSector = Array.from(selectedSectors).map(sel => sel.value);
     // Store for session
-    sessionStorage.searchStage = srchStage;
-    sessionStorage.searchLoc = srchLoc;
-    sessionStorage.searchSector = JSON.stringify(srchSector);
+    sessionStorage.setItem("searchStage", srchStage);
+    sessionStorage.setItem("searchLoc", srchLoc);
+    sessionStorage.setItem("searchSector", JSON.stringify(srchSector));
     "use strict";
     // Change the URL to the loading screen
     location.assign("/atom-capital/loadScreen.html");
