@@ -35,7 +35,7 @@ function loadMatches () {
     // Load the JSON file
     var jsonFile
     console.log("loading");
-    $.getJSON('/atom-capital/vc-match.json', function(jsonFile) {
+    $.getJSON('/atom-capital/vc-match.json', function(jsonFile) { // https://jsonlint.com/ to validate it is a proper JSON if it is not working
         // Read the cookies
         console.log("loaded");
         var srchStage = getCookie("searchStage");
