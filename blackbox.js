@@ -33,7 +33,7 @@ function loadMatches () {
     "use strict";
     // Load the JSON file
     var jsonFile;
-    $.getJSON('https://jackiehj-liu.github.io/atom-capital/vc-match.json', function(jsonFile) {
+    $.getJSON('/atom-capital/vc-match.json', function(jsonFile) { // *************************************** IDK if jQuery requires the full url so if something goes wrong, it's probably this
         // Read the cookies
         var srchStage = getCookie("searchStage");
         var srchLoc = getCookie("searchLoc");
