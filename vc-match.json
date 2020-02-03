@@ -145,7 +145,7 @@
   },
   {
     "name": "Semil Shah",
-    "company": "Lightspeed", "Haystack",
+    "company": ["Lightspeed", "Haystack"],
     "stage": ["Seed", "A+"],
     "location": ["San Francisco Bay Area"],
     "Email": "semil@lsvp.com",
@@ -706,7 +706,7 @@
     "name": "Matt Heiman",
     "company": "Greylock",
     "stage": ["A+"],
-    "location": "San Francisco Bay Area", "New York",
+    "location": ["San Francisco Bay Area", "New York"],
     "Email": "matt@crv.com",
     "Social Link": "https://www.crv.com/team/matt-heiman/",
     "sectors": ["Blockchain", "Education", "Enterprise", "FIntech"]
@@ -742,7 +742,7 @@
     "name": "Chang Xu",
     "company": "Basis Set Ventures",
     "stage": ["A+"],
-    "location": "San Francisco Bay Area", "New York",
+    "location": ["San Francisco Bay Area", "New York"],
     "Email": "https://www.linkedin.com/in/changx/",
     "Social Link": "https://www.basisset.ventures/team",
     "sectors": ["AI", "Education", " Hardware", " Marketplaces"]
