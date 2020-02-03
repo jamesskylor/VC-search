@@ -1,18 +1,1131 @@
-[{
-		"name": "peter",
-		"company": "smile",
-		"stage": ["Seed", "A+"],
-		"location": ["Toronto", "New York"],
-		"sectors": ["Agtech", "Robotics"]
-	},
+[
+  {
+    "name": "Satya Patel",
+    "company": "Homebrew",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "satya@homebrew.co",
+    "Social Link": "https://homebrew.co/team",
+    "sectors": ["Agtech;Fintech;Human capital"]
+  },
+  {
+    "name": "Vishal Vasishth",
+    "company": "Obvious Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "vishal@obvious.com",
+    "Social Link": "https://obvious.com/team/vishal-vasishth",
+    "sectors": ["Agtech;AI;Education;Fintech;Healthcare;Manufacturing;Marketplaces"]
+  },
+  {
+    "name": "Dave Morin",
+    "company": "Slow Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "dave@slow.co",
+    "Social Link": "https://www.linkedin.com/in/davemorin",
+    "sectors": ["Agtech;Biotech;Consumer products;Hardware"]
+  },
+  {
+    "name": "Kevin Zhang",
+    "company": "Upfront Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "kevin@upfront.com",
+    "Social Link": "https://upfront.com/people/kevin-zhang",
+    "sectors": ["Agtech;AR/VR;Cleantech;Healthcare;Marketplaces;Oceans"]
+  },
+  {
+    "name": "Isaac Souweine",
+    "company": "Real Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["Montreal;Canada"],
+    "Email": "isaac@realventures.com",
+    "Social Link": "https://realventures.com/team/",
+    "sectors": ["Agtech;AI;AR/VR;Biotech;Autonomous vehicles;Quantum"]
+  },
+  {
+    "name": "Greg Bettinelli",
+    "company": "Upfront Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "greg@upfront.com",
+    "Social Link": "https://upfront.com/people/greg-bettinelli",
+    "sectors": ["Agtech;Consumer products;"]
+  },
+  {
+    "name": "Garry Tan",
+    "company": "Initialized Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;New York;Seattle"],
+    "Email": "contact@initialized.com",
+    "Social Link": "https://initialized.com/who/garry/",
+    "sectors": ["AI;Enterprise;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Jeff Clavier",
+    "company": "Uncork Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;New York;Boston;Canada"],
+    "Email": "movingforward@uncorkcapital.com",
+    "Social Link": "https://uncorkcapital.com/team/jeff-clavier/",
+    "sectors": ["AI;Developer tools;Hardware;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "Pete Flint",
+    "company": "NFX",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;New York;Boston"],
+    "Email": "pete@nfx.com",
+    "Social Link": "https://www.nfx.com/team",
+    "sectors": ["AI;AR/VR;Fintech;Marketplaces"]
+  },
+  {
+    "name": "James Currier",
+    "company": "NFX",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;Israel"],
+    "Email": "james@nfx.com",
+    "Social Link": "https://www.nfx.com/team",
+    "sectors": ["AI;Biotech;Consumer products;Enterprise;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Andy McLoughlin",
+    "company": "Uncork Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;New York;Boston"],
+    "Email": "movingforward@uncorkcapital.com",
+    "Social Link": "https://uncorkcapital.com/team/andy-mcloughlin",
+    "sectors": ["AI;Developer tools;Marketplaces"]
+  },
+  {
+    "name": "Ann Miura Ko",
+    "company": "Floodgate",
+    "stage": ["Seed:A+"],
+    "location": ["San Fancisco Bay Area;New York"],
+    "Email": "ann@floodgate.com",
+    "Social Link": "https://floodgate.com/ann-miura-ko/",
+    "sectors": ["AI;Developer tools;Consumer products;Marketplaces"]
+  },
+  {
+    "name": "Aydin Senkut",
+    "company": "Felicis Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "aydin@felicis.com",
+    "Social Link": "https://www.felicis.com/team/aydin/",
+    "sectors": ["AI;Healthcare;Education;Enterprise;Fintech;Quantum"]
+  },
+  {
+    "name": "John Stokes",
+    "company": "Real Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Montreal;Canada"],
+    "Email": "john@realventures.com",
+    "Social Link": "https://realventures.com/team/",
+    "sectors": ["AI;Fintech;Quantum"]
+  },
+  {
+    "name": "Sylvain Carle",
+    "company": "Real Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Montreal;Canada"],
+    "Email": "sylvain@realventures.com",
+    "Social Link": "https://realventures.com/team/",
+    "sectors": ["AI;Biotech;Developer tools;Hardware;Manufacturing;Robotics;Quantum"]
+  },
+  {
+    "name": "Scott Nolan",
+    "company": "Founders Fund",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "scott@foundersfund.com",
+    "Social Link": "https://foundersfund.com/team/scott-nolan/",
+    "sectors": ["AI;Biotech;Education;Energy;Enterprise;Hardware;Healthcare;Manufacturing;Moonshots;Quantum;Space"]
+  },
+  {
+    "name": "Semil Shah",
+    "company": "Lightspeed;Haystack",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "semil@lsvp.com",
+    "Social Link": "https://www.linkedin.com/in/semilshah",
+    "sectors": ["AI;Enterprise;Marketplaces;Quantum"]
+  },
+  {
+    "name": "Hemant Mohapatra",
+    "company": "Lightspeed",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;Seatle;New York"],
+    "Email": "hemant@lsvp.com",
+    "Social Link": "https://lsvp.com/team/hemant-mohapatra/",
+    "sectors": ["AI;Developer tools;Enterprises;Quantum"]
+  },
+  {
+    "name": "Jeff Epstein",
+    "company": "Bessemer Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Fancisco Bay Area"],
+    "Email": "jeff@bvp.com",
+    "Social Link": "https://www.bvp.com/team/jeff-epstein/",
+    "sectors": ["AI;Developer tools;Enterprises;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Micheal Carney",
+    "company": "Upfront Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;New York;Boston;Seattle"],
+    "Email": "https://www.linkedin.com/in/mcarney/",
+    "Social Link": "https://upfront.com/people/michael-carney",
+    "sectors": ["AI;Blockchain;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Scott Barclay",
+    "company": "Data Collective",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;Boston;Global"],
+    "Email": "scott@dcvc.com",
+    "Social Link": "https://www.dcvc.com/bio/core/scott-barclay.html",
+    "sectors": ["AI;Agtech;Biotech;Consumer products;Fintech;Energy;Healthcare"]
+  },
+  {
+    "name": "Matt Ocko",
+    "company": "Data Collective",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://twitter.com/mattocko",
+    "Social Link": "https://www.dcvc.com/bio/core/matthew-ocko.html",
+    "sectors": ["AI;Biotech;Healthcare;Quantum;Robotics"]
+  },
+  {
+    "name": "James Skylor",
+    "company": "Atom Capital",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada;San Francisco Bay Area;New York;Boston"],
+    "Email": "",
+    "Social Link": "",
+    "sectors": ["AI;Biotech;Education;Energy;Enterprise;Hardware;Healthcare;Manufacturing;Moonshots;Oceans;Quantum;Space"]
+  },
+  {
+    "name": "Ben Matthews",
+    "company": "Bessemer Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "ben@bvp.com",
+    "Social Link": "https://www.bvp.com/team/ben-mathews/",
+    "sectors": ["AR/VR"]
+  },
+  {
+    "name": "Beth Turner",
+    "company": "SV Angel",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "partners@svangel.com",
+    "Social Link": "https://svangel.com/#team",
+    "sectors": ["Blockchain;Healthcare; Quantum"]
+  },
+  {
+    "name": "Kara Nortman",
+    "company": "Upfront Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "info@upfront.com",
+    "Social Link": "https://upfront.com/people/kara-nortman",
+    "sectors": ["Blockchain;Developer tools;Enterprise;Human capital;Marketplaces"]
+  },
+  {
+    "name": "Andrew Beebe",
+    "company": "Obvious Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "andrew@obvious.com",
+    "Social Link": "https://obvious.com/team/andrew-beebe",
+    "sectors": ["Cleantech;Fintech;Oceans;Healthcare"]
+  },
+  {
+    "name": "James Joaquin",
+    "company": "Obvious Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "james@obvious.com",
+    "Social Link": "https://obvious.com/team/james-joaquin",
+    "sectors": ["Cleantech;Marketplace;Oceans"]
+  },
+  {
+    "name": "Brett Berson",
+    "company": "First Round Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "brett@firstround.com",
+    "Social Link": "https://firstround.com/person/brett-berson/",
+    "sectors": ["Cleantech;Enterprise;Oceans"]
+  },
+  {
+    "name": "Robert Pollack",
+    "company": "SV Angel",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "partners@svangel.com",
+    "Social Link": "https://svangel.com/#team",
+    "sectors": ["Consumer products"]
+  },
+  {
+    "name": "Aaron Batalion",
+    "company": "Lightspeed",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "aaron@lsvp.com",
+    "Social Link": "https://lsvp.com/team/aaron-batalion/",
+    "sectors": ["Consumer products;Enterprise;Hardware;Quantum"]
+  },
+  {
+    "name": "Arjun Chopra",
+    "company": "Floodgate",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area;New York;Boston"],
+    "Email": "investors@floodgate.com",
+    "Social Link": "https://floodgate.com/arjun-chopra/",
+    "sectors": ["Consumer products;Marketplace"]
+  },
+  {
+    "name": "Phin Barnes",
+    "company": "First Round Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "phin@firstround.com",
+    "Social Link": "https://firstround.com/person/phin-barnes/#mystory",
+    "sectors": ["Consumer products;Fintech;Healthcare"]
+  },
+  {
+    "name": "Stephanie Palmeri",
+    "company": "Uncork Capital",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto; San Francisco Bay Area; New York; Boston"],
+    "Email": "https://www.linkedin.com/in/stephpalmeri/",
+    "Social Link": "https://uncorkcapital.com/team/stephanie-palmeri",
+    "sectors": ["Consumer products;Education;Hardware;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "Mike Maples",
+    "company": "Floodgate",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/maples",
+    "Social Link": "https://floodgate.com/mike-maples-jr/",
+    "sectors": ["Developer tools;Consumer products;Education;Enterprise;Marketplaces"]
+  },
+  {
+    "name": "Josh Kopelman",
+    "company": "First Round Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "josh@firstround.com",
+    "Social Link": "https://firstround.com/person/josh-kopelman/#mystory",
+    "sectors": ["Developer tools;Enterprise;Fintech"]
+  },
+  {
+    "name": "Gigi Levy-Weiss",
+    "company": "NFX",
+    "stage": ["Seed:A+"],
+    "location": ["Israel; San Francisco Bay Area"],
+    "Email": "gigi@nfx.com",
+    "Social Link": "https://www.nfx.com/team/gigi-levy-weiss",
+    "sectors": ["Developer tools;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Bennett Carroccio",
+    "company": "Andreessen Horowitz",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/bennett-carroccio-086632ba/",
+    "Social Link": "https://a16z.com/author/bennett-carroccio/",
+    "sectors": ["Education;Enterprise;Marketplace"]
+  },
+  {
+    "name": "Chang Xu",
+    "company": "Basis Set Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/changx",
+    "Social Link": "https://www.basisset.ventures/team",
+    "sectors": ["AI;Consumer products;Enterprise;Robotics"]
+  },
+  {
+    "name": "Matt Cohler",
+    "company": "Benchmark",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "contact@benchmark.com",
+    "Social Link": "https://www.linkedin.com/in/mattcohler",
+    "sectors": ["Blockchain;Enterprise;Marketplaces"]
+  },
+  {
+    "name": "Alexis Ohanian",
+    "company": "Initialized Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "contact@initialized.com",
+    "Social Link": "https://initialized.com/who/alexis/",
+    "sectors": ["Enterprise;Marketplaces"]
+  },
+  {
+    "name": "Cyan Banister",
+    "company": "Founders Fund",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "cyan@foundersfund.com",
+    "Social Link": "https://foundersfund.com/team/cyan-banister/",
+    "sectors": ["Enterprise;Fintech;Healthcare;Manufacturing;Quantum"]
+  },
+  {
+    "name": "Kevin Carter",
+    "company": "SV Angel",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "info@svangel.com",
+    "Social Link": "https://svangel.com/#team",
+    "sectors": ["Enterprise;Quantum"]
+  },
+  {
+    "name": "Ron Conway",
+    "company": "SV Angel",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "partners@svangel.com",
+    "Social Link": "https://svangel.com/#team",
+    "sectors": ["Enterprise; Marketplaces; Quantum"]
+  },
+  {
+    "name": "John Lilly",
+    "company": "Greylock",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "john.lilly@greylock.com",
+    "Social Link": "https://www.greylock.com/team/#john-lilly",
+    "sectors": ["Enterprise"]
+  },
+  {
+    "name": "Fred Wilson",
+    "company": "Union Square Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["New York"],
+    "Email": "fred@usv.com",
+    "Social Link": "https://www.usv.com/people/fred-wilson/",
+    "sectors": ["Enterprise"]
+  },
+  {
+    "name": "Albert Wenger",
+    "company": "Union Square Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["New York"],
+    "Email": "albert@usv.com",
+    "Social Link": "https://www.usv.com/people/albert-wenger/",
+    "sectors": ["Enterprise"]
+  },
+  {
+    "name": "Andy Weissman",
+    "company": "Union Square Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["New York"],
+    "Email": "andy@usv.com",
+    "Social Link": "https://www.usv.com/people/andy-weissman/",
+    "sectors": ["Enterprise"]
+  },
+  {
+    "name": "Mark Suster",
+    "company": "Upfront Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "info@upfront.com",
+    "Social Link": "https://upfront.com/people/mark-suster",
+    "sectors": ["Enterprise"]
+  },
+  {
+    "name": "Bill Trenchard",
+    "company": "First Round Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "bill@firstround.com",
+    "Social Link": "https://firstround.com/person/bill-trenchard/#mystory",
+    "sectors": ["Enterprise;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Rob Hayes",
+    "company": "First Round Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "info@firstround.com",
+    "Social Link": "https://firstround.com/person/rob-hayes/#mystory",
+    "sectors": ["Enterprise;Fintech"]
+  },
+  {
+    "name": "Hayley Barna",
+    "company": "First Round Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "hayley@firstround.com",
+    "Social Link": "https://firstround.com/person/hayley-barna/#mystory",
+    "sectors": ["Consumer products;Enterprise;Marketplaces"]
+  },
+  {
+    "name": "Will Quist",
+    "company": "Slow Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/will-quist-b4b4974",
+    "Social Link": "https://www.linkedin.com/in/will-quist-b4b4974",
+    "sectors": ["Fintech;Healthcare;Human capital;Marketplaces"]
+  },
+  {
+    "name": "Brad Burnham",
+    "company": "Union Square Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["New York"],
+    "Email": "brad@usv.com",
+    "Social Link": "https://www.usv.com/people/brad-burnham/",
+    "sectors": ["Healthcare"]
+  },
+  {
+    "name": "Stan Chudnovsky",
+    "company": "NFX",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "stan@nfx.com",
+    "Social Link": "https://www.nfx.com/team/stan-chudnovsky",
+    "sectors": ["Marketplaces"]
+  },
+  {
+    "name": "Brian Pokor",
+    "company": "SV Angel",
+    "stage": ["Seed"],
+    "location": ["San Francisco Bay Area;New York"],
+    "Email": "info@svangel.com",
+    "Social Link": "https://svangel.com/#team",
+    "sectors": ["Marketplaces;Quantum"]
+  },
+  {
+    "name": "Iris Choi",
+    "company": "Floodgate",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/irischoi/",
+    "Social Link": "https://floodgate.com/iris-choi/",
+    "sectors": ["Marketplaces"]
+  },
+  {
+    "name": "Ev Williams",
+    "company": "Obvious Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "ev@obvious.com",
+    "Social Link": "https://obvious.com/team/ev-williams",
+    "sectors": ["Marketplaces;Moonshots;Oceans"]
+  },
+  {
+    "name": "Kevin Colleran",
+    "company": "Slow Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/kevcoll",
+    "Social Link": "https://www.linkedin.com/in/kevcoll",
+    "sectors": ["Marketplaces"]
+  },
+  {
+    "name": "Wen Hsieh",
+    "company": "Kleiner Perkins",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "wenh@kpcb.com",
+    "Social Link": "https://www.kleinerperkins.com/people/wen-hsieh/",
+    "sectors": ["AI;AR/VR;Autonomous vehicles;Cleantech;Oceans;Hardware;Quantum"]
+  },
+  {
+    "name": "Nakul Mandan",
+    "company": "Lightspeed",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "nakul@lsvp.com",
+    "Social Link": "https://lsvp.com/team/nakul-mandan/",
+    "sectors": ["AI;Enterprise;Human capital;Marketplaces"]
+  },
+  {
+    "name": "Eric Feng",
+    "company": "Kleiner Perkins",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/efeng/",
+    "Social Link": "https://www.kleinerperkins.com/people/eric-feng/",
+    "sectors": ["AI;Cleantech;Oceans;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "Aaron Jacobson",
+    "company": "NEA",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "ajacobson@nea.com",
+    "Social Link": "https://www.nea.com/team/aaron-jacobson",
+    "sectors": ["AI;Autonomous vehicles;Developer tools;Enterprise;Robotics"]
+  },
+  {
+    "name": "Napolean Ta",
+    "company": "Founders Fund",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "napolean@foundersfund.com",
+    "Social Link": "https://foundersfund.com/team/napoleon-ta/",
+    "sectors": ["AI;Cleantech;Education;Enterprise;Healthcare;Robotics;Oceans"]
+  },
+  {
+    "name": "Raviraj JaIn",
+    "company": "Lightspeed",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "raviraj@lsvp.com",
+    "Social Link": "https://lsvp.com/team/raviraj-jain/",
+    "sectors": ["AI;Autonomous vehicles;Blockchain;Developer tools;Enterprise"]
+  },
+  {
+    "name": "Jon Sakoda",
+    "company": "Decibel",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "jon@decibel.vc",
+    "Social Link": "https://www.decibel.vc/team",
+    "sectors": ["AI;Consumer products;Enterprise"]
+  },
+  {
+    "name": "Daniel Levine",
+    "company": "Accel Partners",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/danielmarklevine/",
+    "Social Link": "https://www.accel.com/team/daniel-levine",
+    "sectors": ["AI;Developer tools;Marketplaces"]
+  },
+  {
+    "name": "Tal Morgenstern",
+    "company": "Lightspeed",
+    "stage": ["A+"],
+    "location": ["Israel"],
+    "Email": "tal@lsvp.com",
+    "Social Link": "https://lsvp.com/team/tal-morgenstern/",
+    "sectors": ["AI;Blockchain;Education;Enterprise;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Steve Jurvetson",
+    "company": "Future Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/stevejurvetson",
+    "Social Link": "https://future.ventures/bio",
+    "sectors": ["AI;Biotech;Autonomous vehicles;Robotics;Space;Moonshots;Oceans;Fintech;Cleantech;Healthcare"]
+  },
+  {
+    "name": "Ansaf Kareem",
+    "company": "Lightspeed",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "ansaf@lsvp.com",
+    "Social Link": "https://lsvp.com/team/ansaf-kareem/",
+    "sectors": ["AI;Biotech;Healthcare;Blockchain;Education;Marketplaces"]
+  },
+  {
+    "name": "Tony Florence",
+    "company": "NEA",
+    "stage": ["A+"],
+    "location": ["New York"],
+    "Email": "tflorence@nea.com",
+    "Social Link": "https://www.nea.com/team/tony-florence",
+    "sectors": ["AI;Developer tools;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Mamoon Hamid",
+    "company": "Kleiner Perkins",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "mamoon@kleinerperkins.com",
+    "Social Link": "https://www.kleinerperkins.com/people/mamoon-hamid/",
+    "sectors": ["AI;AR/VR;Blockchain;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "Arif Janmohamed",
+    "company": "Lightspeed",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "arif@lsvp.com",
+    "Social Link": "https://lsvp.com/team/arif-janmohamed/",
+    "sectors": ["AI;Developer tools;Enterprise;Fintech"]
+  },
+  {
+    "name": "Brian Singerman",
+    "company": "Founders Fund",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "brain@foundersfund.com",
+    "Social Link": "https://foundersfund.com/team/brian-singerman/",
+    "sectors": ["Biotech;Education;Enterprise;Healthcare"]
+  },
+  {
+    "name": "Rick Yang",
+    "company": "NEA",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "ryang@nea.com",
+    "Social Link": "https://www.nea.com/team/rick-yang",
+    "sectors": ["Consumer products;Education;Energy;Enterprise;Fintech"]
+  },
+  {
+    "name": "Alex Taussig",
+    "company": "Lightspeed Venture Partners",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "ataussig@lsvp.com",
+    "Social Link": "https://lsvp.com/team/alex-taussig/",
+    "sectors": ["AR/VR;Consumer products;Education;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "John Doerr",
+    "company": "Kleiner Perkins",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/john-doerr-03248211/",
+    "Social Link": "https://www.kleinerperkins.com/people/john-doerr/",
+    "sectors": ["Biotech;Cleantech;Oceans;Education"]
+  },
+  {
+    "name": "Santo Politi",
+    "company": "Spark Capital",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "info@sparkcapital.com",
+    "Social Link": "https://www.sparkcapital.com/team-santo-politi",
+    "sectors": ["Education;Developer tools;Marketplaces"]
+  },
+  {
+    "name": "Matt Heiman",
+    "company": "Greylock",
+    "stage": ["A+"],
+    "location": "San Francisco Bay Area;New York",
+    "Email": "matt@crv.com",
+    "Social Link": "https://www.crv.com/team/matt-heiman/",
+    "sectors": ["Blockchain;Education;Enterprise;FIntech"]
+  },
+  {
+    "name": "Vas Natarajan",
+    "company": "Accel Partners",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/vas-natarajan-0b09588/",
+    "Social Link": "https://www.accel.com/team/vas-natarajan",
+    "sectors": ["Developer tools;Education;Enterprise;Healthcare"]
+  },
+  {
+    "name": "Jay Zaveri",
+    "company": "Social Capital",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/jayzaveri/",
+    "Social Link": "https://www.linkedin.com/in/jayzaveri/",
+    "sectors": ["Cleantech;Oceans;Education;Enterprise;Healthcare"]
+  },
+  {
+    "name": "Benjamin Ling",
+    "company": "Bling Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/benjaminling/",
+    "Social Link": "https://www.blingcap.com/team/",
+    "sectors": ["AI;Education;Marketplaces"]
+  },
+  {
+    "name": "Chang Xu",
+    "company": "Basis Set Ventures",
+    "stage": ["A+"],
+    "location": "San Francisco Bay Area;New York",
+    "Email": "https://www.linkedin.com/in/changx/",
+    "Social Link": "https://www.basisset.ventures/team",
+    "sectors": ["AI;Education; Hardware; Marketplaces"]
+  },
+  {
+    "name": "Kevin Hartz",
+    "company": "Y Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/hartz",
+    "Social Link": "http://www.yventures.com/kevin/",
+    "sectors": ["Biotech;Enterprise;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Jeremy Liew",
+    "company": "Lightspeed",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "jeremy@lsvp.com",
+    "Social Link": "https://lsvp.com/team/jeremy-liew/",
+    "sectors": ["Fintech;Marketplaces"]
+  },
+  {
+    "name": "Angela Strange",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/angelastrange",
+    "Social Link": "https://www.linkedin.com/in/angelastrange",
+    "sectors": ["Fintech"]
+  },
+  {
+    "name": "Sarah Tavel",
+    "company": "Benchmark",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/sarahtavel/",
+    "Social Link": "https://www.linkedin.com/in/sarahtavel",
+    "sectors": ["Healthcare;Developer tools;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Vinod Khosla",
+    "company": "Khosla Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "ovk@khoslaventures.com",
+    "Social Link": "https://www.khoslaventures.com/team/vinod-khosla",
+    "sectors": ["AI;Agtech;Biotech;Energy;Enterprise;Fintech;Healthcare;Moonshots;Ocean;Space"]
+  },
+  {
+    "name": "Roelof Botha",
+    "company": "Sequoia",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "early-rb@sequoiacap.com",
+    "Social Link": "https://www.sequoiacap.com/people/roelof-botha/",
+    "sectors": ["Consumer products;Enterprise;Fintech"]
+  },
+  {
+    "name": "Alfred Lin",
+    "company": "Sequoia",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "Early-AL@sequoiacap.com",
+    "Social Link": "https://www.sequoiacap.com/people/alfred-lin/",
+    "sectors": ["Developer tools;Enterprise;Fintech"]
+  },
+  {
+    "name": "Tim Draper",
+    "company": "Draper Associates",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/timothydraper/",
+    "Social Link": "https://draper.vc/about/",
+    "sectors": ["Fintech;Healthcare;Marketplaces;Moonshots;Space"]
+  },
+  {
+    "name": "Jeremy Philips",
+    "company": "Spark Capital",
+    "stage": ["A+"],
+    "location": ["New York"],
+    "Email": "https://www.linkedin.com/in/jeremyphilips/",
+    "Social Link": "https://www.sparkcapital.com/team-jeremy-philips",
+    "sectors": ["Fintech;Marketplaces"]
+  },
+  {
+    "name": "Alex Tran",
+    "company": "General Catalyst",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "atran@generalcatalyst.com",
+    "Social Link": "https://www.generalcatalyst.com/team/alex-tran/",
+    "sectors": ["Fintech;Healthcare"]
+  },
+  {
+    "name": "Dana Stalder",
+    "company": "Matrix",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "info@matrixpartners.com",
+    "Social Link": "https://www.matrixpartners.com/team/dana-stalder/",
+    "sectors": ["Consumer products;Enterprise;FIntech"]
+  },
+  {
+    "name": "Connie Chan",
+    "company": "Andreessen Horowitz",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/conniechan/",
+    "Social Link": "https://a16z.com/author/connie-chan/",
+    "sectors": ["Hardware;Marketplaces"]
+  },
+  {
+    "name": "Joseph Ansanelli",
+    "company": "Greylock",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "jansanelli@greylock.com",
+    "Social Link": "https://www.greylock.com/team/#joseph-ansanelli",
+    "sectors": ["Biotech;Developer tools;Enterprise;Hardware;Marketplaces"]
+  },
+  {
+    "name": "Ray Ko",
+    "company": "Social Capital",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "inbox@socialcapital.com",
+    "Social Link": "https://www.linkedin.com/in/ray-ko-1898291/",
+    "sectors": ["AI;Hardware;Marketplaces;Moonshots"]
+  },
+  {
+    "name": "Arjun Sethi",
+    "company": "Tribe Capital",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/asethi/",
+    "Social Link": "https://www.linkedin.com/in/asethi/",
+    "sectors": ["AI;Enterprise;Hardware;Fintech"]
+  },
+  {
+    "name": "Sarah Marion",
+    "company": "iNovia",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "https://www.inovia.vc/contact",
+    "Social Link": "https://www.inovia.vc/people/sarah-marion",
+    "sectors": ["AR/VR;Blockchain;Enterprise;Human capital;Robotics"]
+  },
+  {
+    "name": "Danielle Strachman",
+    "company": "1517 Fund",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "https://twitter.com/DStrachman",
+    "Social Link": "https://www.1517fund.com/team",
+    "sectors": ["Enterprise;AR/VR;Fintech;Consumer products"]
+  },
+  {
+    "name": "Micheal Gibson",
+    "company": "1517 Fund",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "https://twitter.com/William_Blake",
+    "Social Link": "https://www.1517fund.com/team",
+    "sectors": ["Enterprise;AR/VR; Fintech;Consumer products"]
+  },
+  {
+    "name": "Andrew Chen",
+    "company": "Andreessen Horowitz",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/andrew-chen/",
+    "sectors": ["Consumer products;Enterprise;AR/VR;Marketplaces"]
+  },
+  {
+    "name": "Alex Rampel",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/alex-rampell/",
+    "sectors": ["Fintech;Marketplaces"]
+  },
+  {
+    "name": "Jorge Conde",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/jorge-conde/",
+    "sectors": ["Biotech;Hardware"]
+  },
+  {
+    "name": "Vijay Pande",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/vijay-pande/",
+    "sectors": ["Agtech;AI;Biotech;Healthcare"]
+  },
+  {
+    "name": "Chris Dixon",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/chris-dixon/",
+    "sectors": ["AR/VR;Blockchain;Quantum;Hardware;Robotics"]
+  },
+  {
+    "name": "David Ulevitch",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/david-ulevitch/",
+    "sectors": ["Enterprise;Marketplaces"]
+  },
+  {
+    "name": "Katie Haun",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/katie-haun/",
+    "sectors": ["Blockchain"]
+  },
+  {
+    "name": "Rex Salisbury",
+    "company": "Andreessen Horowitz",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "businessplans@a16z.com",
+    "Social Link": "https://a16z.com/author/rex-salisbury/",
+    "sectors": ["Enterprise;Fintech"]
+  },
+  {
+    "name": "Michael Moritz",
+    "company": "Sequoia",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "moritz@sequoiacap.com",
+    "Social Link": "https://www.sequoiacap.com/people/michael-moritz/",
+    "sectors": ["AI;Consumer products;Enterprise;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Joe Lonsdale",
+    "company": "8VC",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/joe-lonsdale-6695a2",
+    "Social Link": "https://8vc.com/team/joe-lonsdale/",
+    "sectors": ["AI;AR/VR;Fintech;Quantum;Enterprise;Moonshots;Space;Biotech;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "David Skok",
+    "company": "Matrix",
+    "stage": ["A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "dskok@matrixpartners.com",
+    "Social Link": "https://www.matrixpartners.com/team/david-skok/",
+    "sectors": ["AI;Enterprise;Developer tools"]
+  },
+  {
+    "name": "Sean Abbott",
+    "company": "iNovia",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "https://www.inovia.vc/contact",
+    "Social Link": "https://www.inovia.vc/people/shawn-abbott",
+    "sectors": ["AI;Enterprise;FIntech;Healthcare"]
+  },
+  {
+    "name": "Janet Bannister",
+    "company": "Real Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "janet@realventures.com",
+    "Social Link": "https://realventures.com/team/",
+    "sectors": ["AI;Enterprise;Fintech;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "JS Cournoyer",
+    "company": "Real Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "cournoyerjs@realventures.com",
+    "Social Link": "https://realventures.com/team/",
+    "sectors": ["AI;AR/VR;Biotech;Blockchain;Education;Energy;FintechHealthcare;"]
+  },
+  {
+    "name": "John Albright",
+    "company": "Relay Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "john@relayventures.com",
+    "Social Link": "http://relayventures.com/people/john-albright/",
+    "sectors": ["Consumer products;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Eva Lau",
+    "company": "Two Small Fish Ventures",
+    "stage": ["Seed"],
+    "location": ["Toronto;Canada"],
+    "Email": "pitch@twosmallfishventures.com",
+    "Social Link": "https://twosmallfish.vc/team/",
+    "sectors": ["AI;Blockchain;Consumer product;Enterprise;Marketplaces"]
+  },
+  {
+    "name": "Damien Steel",
+    "company": "OMERS",
+    "stage": ["A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "dsteel@omersventures.com",
+    "Social Link": "https://www.omersventures.com/Team/Investments/Damien-Steel",
+    "sectors": ["Agtech;AI;AR/VR;Biotech;Blockchain;Cars/Autonomous Vehicles;Cleantech;Consumer Products;Developer tools;Education;Energy;Enterprise;Fintech;Hardware;Manufacturing;Marketplaces;Robotics;"]
+  },
+  {
+    "name": "Hunter Walk",
+    "company": "Homebrew",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "hunter@homebrew.co",
+    "Social Link": "https://homebrew.co/team",
+    "sectors": ["AI;Consumer products;Enterprise;Fintech;Marketplaces"]
+  },
+  {
+    "name": "Sarah Guo",
+    "company": "Greylock",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "sguo@greylock.com",
+    "Social Link": "https://www.greylock.com/team/#sarah-guo",
+    "sectors": ["AI;AR/VR;Enterprise;Healthcare"]
+  },
+  {
+    "name": "Reid Hoffman",
+    "company": "Greylock",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "https://www.linkedin.com/in/reidhoffman",
+    "Social Link": "https://www.greylock.com/team/#reid-hoffman",
+    "sectors": ["AI;Blockchain;Consumer products;Enterprise;Marketplaces"]
+  },
+  {
+    "name": "Josh Elman",
+    "company": "Greylock",
+    "stage": ["Seed:A+"],
+    "location": ["San Francisco Bay Area"],
+    "Email": "jelman@greylock.com",
+    "Social Link": "https://www.greylock.com/team/#josh-elman",
+    "sectors": ["Consumer products;Marketplaces"]
+  },
+  {
+    "name": "John Berton",
+    "company": "Georgian Partners",
+    "stage": ["Seed:A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "https://georgianpartners.com/team/john-berton/",
+    "Social Link": "https://www.linkedin.com/in/john-berton-6269877/",
+    "sectors": ["AI;Blockchain;Consumer products;Enterprise;Fintech;Healthcare;Marketplaces"]
+  },
+  {
+    "name": "Stephanie Choo",
+    "company": "Portag3 Ventures",
+    "stage": ["A+"],
+    "location": ["Toronto;Canada"],
+    "Email": "https://www.linkedin.com/in/stephanie-choo",
+    "Social Link": "https://p3vc.com/team/",
+    "sectors": ["Fintech"]
+  },
+  {
+    "name": "Rob Giles",
+    "company": "CE Ventures",
+    "stage": ["Seed:A+"],
+    "location": ["Calgary;Canada"],
+    "Email": "rgiles@capitalenergy.ca",
+    "Social Link": "https://ca.linkedin.com/in/robert-giles-b617036",
+    "sectors": ["AI;AR/VR;Blockchain;Consumer products;Enterprise;Fintech;Healthcare;Marketplaces"]
+  },
+  
+
+
     
-    {
-		"name": "tom",
-		"company": "adasdl",
-		"stage": ["lkmkmamksdl", "mkalmdal"],
-		"location": ["anmdkamldas", "admalmadkl"],
-		"sectors": ["AI", "AgTech"]
-	}
-
-
-]
+    
