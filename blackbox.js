@@ -38,10 +38,16 @@ function loadMatches () {
     $.getJSON('/atom-capital/vc-match.json', function(jsonFile) { // https://jsonlint.com/ to validate it is a proper JSON if it is not working
         // Read the cookies
         console.log("loaded");
+        /*
         var srchStage = getCookie("searchStage");
         var srchLoc = getCookie("searchLoc");
         var sectorString = getCookie("searchSector");
         var srchSector = sectorString.split(",");
+        */
+        // Get info from sessionStorage
+        var srchStage = sessionStorage.searchStage;
+        var srchLoc = sessionStorage.searchLoc;
+        var srchSector = JSON.parse(sessionStorage.searchSector);
         // Set up finder thing
         // Length of the answer array
         var maxPts = (srchSector.length * 2) + 1;
@@ -89,7 +95,10 @@ function loadMatches () {
         }
         // Create Cookie by first stringifying the object
         var tempStrings = JSON.stringify(selections);
+        /*
         setCookie("select", tempStrings, 1);
+        */
+        sessionStorage.select = tempStrings;
         // Replace the URL with that of the results screen
         location.replace("/atom-capital/results.html");
         return false;
