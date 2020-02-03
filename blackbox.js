@@ -35,7 +35,7 @@ function loadMatches () {
     // Load the JSON file
     var jsonFile
     console.log("loading");
-    $.getJSON('https://jackiehj-liu.github.io/atom-capital/vc-match.json', function(jsonFile) { // *************************************** IDK if jQuery requires the full url so if something goes wrong, it's probably this
+    $.getJSON('/atom-capital/vc-match.json', function(jsonFile) {
         // Read the cookies
         console.log("loaded");
         var srchStage = getCookie("searchStage");
