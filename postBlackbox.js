@@ -40,7 +40,7 @@ function printMatches () {
             // Create the paragraph of info
             var para = document.createElement("P");
             // Set values for headers and paragraph
-            para.innerHTML = "<strong>Contact:</strong> "+selections[pointLoop][vcLoop].Email+"<br><br><strong>Company Name:</strong> "+selections[pointLoop][vcLoop].company+"<br><br><strong>Company Location:</strong> "+selections[pointLoop][vcLoop].location.join(", ")+"<br><br><strong>Stage:</strong> "+selections[pointLoop][vcLoop].stage.join(", ")+"<br><br><strong>Sectors:</strong> "+selections[pointLoop][vcLoop].sectors.join(", ")+"<br><br>";
+            para.innerHTML = "<strong>Contact:</strong><br>"+selections[pointLoop][vcLoop].Email+"<br><br><strong>Company Name:</strong><br>"+selections[pointLoop][vcLoop].company+"<br><br><strong>Company Location:</strong><br>"+selections[pointLoop][vcLoop].location.join(", ")+"<br><br><strong>Stage:</strong><br>"+selections[pointLoop][vcLoop].stage.join(", ")+"<br><br><strong>Sectors:</strong><br>"+selections[pointLoop][vcLoop].sectors.join(", ")+"<br><br>";
             // Append all to their respective "parents"
             curCell.appendChild(head2);
             curCell.appendChild(para);
