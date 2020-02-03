@@ -35,7 +35,7 @@ function formToResults() {
     setCookie("searchSector", srchSector, 1);
     "use strict";
     // Change the URL to the loading screen
-    location.assign("https://jackiehj-liu.github.io/atom-capital/loadScreen.html");
+    location.assign("/atom-capital/loadScreen.html");
     return false;
 }
 
