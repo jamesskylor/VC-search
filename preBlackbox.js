@@ -1,18 +1,13 @@
-
-/*
-To Do:
-- Test and Fix the results printing (for new JSON file)
-*/
-
 // Create an event listener for the submission of the form
 document.getElementById("theForm").addEventListener('submit', (e)=>{
     // Prevent the form from submitting and interrupting the JS
+    console.log("Prevented default");
     e.preventDefault();
     // Call on the function to run and do all the operations
     formToResults();
 });
 
-// This function creates cookies to send to the blackbox
+// This function stores data to send to the blackbox
 function formToResults() {
     // Initialize the variables we need for calculations before switching the page
     var srchStage, srchLoc, srchSector;
