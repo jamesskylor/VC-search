@@ -27,7 +27,7 @@ function formToResults() {
     sessionStorage.setItem("searchSector", JSON.stringify(srchSector));
     "use strict";
     // Change the URL to the loading screen
-    location.assign("/atom-capital/loadScreen.html");
+    location.assign("/VC-search/loadScreen.html");
     return false;
 }
 
