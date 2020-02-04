@@ -9,7 +9,7 @@ function loadMatches () {
     // Load the JSON file
     var jsonFile
     console.log("loading");
-    $.getJSON('/atom-capital/vc-match.json', function(jsonFile) { // https://jsonlint.com/ to validate it is a proper JSON if it is not working
+    $.getJSON('/VC-search/vc-match.json', function(jsonFile) { // https://jsonlint.com/ to validate it is a proper JSON if it is not working
         // Read the cookies
         console.log("loaded");
         // Get info from sessionStorage
@@ -66,7 +66,7 @@ function loadMatches () {
         // Store into sessionStorage
         sessionStorage.setItem("select", tempStrings);
         // Replace the URL with that of the results screen
-        location.replace("/atom-capital/results.html");
+        location.replace("/VC-search/results.html");
         return false;
     });
     console.log("done");
